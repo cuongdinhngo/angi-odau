@@ -1,0 +1,1817 @@
+[
+  {
+    "id": 1,
+    "name": "Bún Đậu Gia Di",
+    "address": "193 Đống Đa, Thanh Bình, Hải Châu, Đà Nẵng",
+    "lat": "16.07850366806975",
+    "lng": "108.21583993807353",
+    "alias": "bun-dau-gia-di",
+    "photo": "public/thumbs/90x90x1/100_343559581-2155332781328500-5115965660893536352-n-e94oWsgbe0.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bún Đậu Gia Di - 2/9",
+    "address": "302 Đường 2 Tháng 9, Hoà Cường Bắc, Hải Châu, Đà Nẵng",
+    "lat": "16.046088353358794",
+    "lng": "108.22240503807348",
+    "alias": "bun-dau-gia-di-29",
+    "photo": "public/thumbs/90x90x1/100_428610928-905485264912525-678668453700819519-n-28NSI1di11.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Bún Đậu Gia Di - Nguyễn Văn Thoại",
+    "address": "100 Nguyễn Văn Thoại, Bắc Mỹ Phú, Ngũ Hành Sơn, Đà Nẵng",
+    "lat": "16.054862320764393",
+    "lng": "108.2408031108301",
+    "alias": "bun-dau-gia-di-nguyen-van-thoai",
+    "photo": "public/thumbs/90x90x1/100_460633367-1057647923029591-2664120041400729465-n-kD4w2ck10r.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bún Đậu Tràng An - Khúc Hạo",
+    "address": "140 Khúc Hạo, Nại Hiên Đông, Sơn Trà, Đà Nẵng",
+    "lat": "16.09341072054352",
+    "lng": "108.2349006477733",
+    "alias": "bun-dau-trang-an-khuc-hao",
+    "photo": "public/thumbs/90x90x1/100_430871352-947656947359489-2416346891393306682-n-GLlYHG92zb.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Bún Đậu Tràng An - 2/9",
+    "address": "126B Đường 2 Tháng 9, Bình Thuận, Hải Châu, Đà Nẵng",
+    "lat": "16.061004652045177",
+    "lng": "108.22287576698386",
+    "alias": "bun-dau-trang-an-29",
+    "photo": "public/thumbs/90x90x1/100_430871352-947656947359489-2416346891393306682-n-zCXzsSH9n2.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Bún Đậu Tràng An - Châu Thị Vĩnh Tế",
+    "address": "141 Châu Thị Vĩnh Tế, Bắc Mỹ Phú, Ngũ Hành Sơn, Đà Nẵng",
+    "lat": "16.056055759607034",
+    "lng": "108.24107187266218",
+    "alias": "bun-dau-trang-an-chau-thi-vinh-te",
+    "photo": "public/thumbs/90x90x1/100_430871352-947656947359489-2416346891393306682-n-DlRY32X9a3.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Trình Cà Phê Phạm Hồng Thái",
+    "address": "25 Phạm Hồng Thái, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.069408255429003",
+    "lng": "108.22153536230624",
+    "alias": "trinh-ca-phe-pham-hong-thai",
+    "photo": "public/thumbs/90x90x1/100_468710667-1268663068058402-6768165199729092602-n-G1urEl6py2.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Trình Cà Phê Phạm Như Xương",
+    "address": "100/19 Phạm Như Xương, Hoà Khánh Nam, Liên Chiểu, Đà Nẵng",
+    "lat": "16.067843988447326",
+    "lng": "108.15474095190018",
+    "alias": "trinh-ca-phe-pham-nhu-xuong",
+    "photo": "public/thumbs/90x90x1/100_468710667-1268663068058402-6768165199729092602-n-zMwzEGKLpz.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Trình Cà Phê Phố đi bộ Bạch Đằng",
+    "address": "Phố đi bộ Bạch Đằng, Bình Hiên, Hải Châu, Đà Nẵng",
+    "lat": "16.061410625385644",
+    "lng": "108.22769703025962",
+    "alias": "trinh-ca-phe-pho-di-bo-bach-dang",
+    "photo": "public/thumbs/90x90x1/100_468710667-1268663068058402-6768165199729092602-n-zYlFEo5sia.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Boulevard Galeto &Coffee",
+    "address": "77 Trần Quốc Toản, Phước Ninh, Hải Châu, Đà Nẵng",
+    "lat": "16.066859138296945",
+    "lng": "108.22141867284824",
+    "alias": "boulevard-galeto-coffee",
+    "photo": "public/thumbs/90x90x1/100_433455140-810854107738868-3108691344013891646-n-sw3xCsNiSQ.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "The Cups Coffee",
+    "address": "02 Nguyễn Văn Trỗi, Hòa Thuận Đông, Hải Châu, Đà Nẵng",
+    "lat": "16.049795472016868",
+    "lng": "108.22189060108195",
+    "alias": "the-cups-coffee",
+    "photo": "public/thumbs/90x90x1/100_348239532-6306633456062363-5794287961117357418-n-ppQfjCYykm.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "The Cups Coffee Trần Hưng Đạo",
+    "address": "Cổng C1 Euro Village, Trần Hưng Đạo, An Hải Tây, Sơn Trà, Đà Nẵng",
+    "lat": "16.054935387910476",
+    "lng": "108.23286654965969",
+    "alias": "the-cups-coffeetran-hung-dao",
+    "photo": "public/thumbs/90x90x1/100_348239532-6306633456062363-5794287961117357418-n-UrFVXF08Py.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "The Cups Coffee Nguyễn Văn Thoại",
+    "address": "192 Nguyễn Văn Thoại, Bắc Mỹ Phú, Ngũ Hành Sơn, Đà Nẵng",
+    "lat": "16.056287430153283",
+    "lng": "108.2466793729574",
+    "alias": "the-cups-coffeenguyen-van-thoai",
+    "photo": "public/thumbs/90x90x1/100_348239532-6306633456062363-5794287961117357418-n-KRheQa23TA.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Lighthouse Da Nang",
+    "address": "12 Dương Đình Nghệ, An Hải Bắc, Sơn Trà, Đà Nẵng",
+    "lat": "16.070703365469253",
+    "lng": "108.24381421147817",
+    "alias": "lighthouse-da-nang",
+    "photo": "public/thumbs/90x90x1/100_438255089-122140300370125759-7076666579730013001-n-wFEJW6POY5.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Namto House Coffee",
+    "address": "130 Nguyễn Chí Thanh, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.074792183811336",
+    "lng": "108.21911730848096",
+    "alias": "namto-house-coffee",
+    "photo": "public/thumbs/90x90x1/100_309631690-5626248747413071-755250450589880090-n-SLsPRVrGHQ.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Ơi Cafe",
+    "address": "27 Bình Minh 3, Bình Thuận, Hải Châu, Đà Nẵng",
+    "lat": "16.055969924440454",
+    "lng": "108.2210831916526",
+    "alias": "oi-cafe",
+    "photo": "public/thumbs/90x90x1/100_344336087-766108228425710-4155298892789934728-n-NOTVyYyugl.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Indigo Vietnam",
+    "address": "30 Bạch Đằng, Thạch Thang, Hải Châu, Đà Nẵng",
+    "lat": "16.07892790247389",
+    "lng": "108.22397690689826",
+    "alias": "indigo-vietnam",
+    "photo": "public/thumbs/90x90x1/100_407294062-122100032660136258-1240862054028038017-n-Xggo8cRiE5.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Nối Café",
+    "address": "113/18 Nguyễn Chí Thanh, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.073850606834082",
+    "lng": "108.22197126320407",
+    "alias": "noi-cafe",
+    "photo": "public/thumbs/90x90x1/100_464001597-581050584260655-991952422780774948-n-8mlr5jX38x.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Tan.danang",
+    "address": "10 Nguyễn Thiện Thuật, Bình Hiên, Hải Châu, Đà Nẵng",
+    "lat": "16.056749722473047",
+    "lng": "108.22166406320373",
+    "alias": "tandanang",
+    "photo": "public/thumbs/90x90x1/100_428620055-241977845653654-6616872986137411247-n-q0ZuYhXltU.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "7AM Coffee",
+    "address": "9 Nguyễn Thiện Thuật, Bình Thuận, Hải Châu, Đà Nẵng",
+    "lat": "16.056573283380583",
+    "lng": "108.22160822342909",
+    "alias": "7am-coffee",
+    "photo": "public/thumbs/90x90x1/100_350299438-615193446997805-691238063086048063-n-MA4DOgiuZT.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Chian - Cafe &Fluffy Pancakes",
+    "address": "23 An Nhơn 7, An Hải Bắc, Sơn Trà, Đà Nẵng",
+    "lat": "16.06917709685048",
+    "lng": "108.2344358792526",
+    "alias": "chian-cafe-fluffy-pancakes",
+    "photo": "public/thumbs/90x90x1/100_459365309-122186184176035490-1484707111212994633-n-BQUaD68dft.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "REDEN Cafe &Bistro",
+    "address": "10 Nguyễn Chí Thanh, Thạch Thang, Hải Châu, Đà Nẵng",
+    "lat": "16.081134967839557",
+    "lng": "108.22009872577839",
+    "alias": "reden-cafe-bistro",
+    "photo": "public/thumbs/90x90x1/100_412946526-122107910576154211-288530859599190953-n-2xirSjPvBJ.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Cá Nóc Café",
+    "address": "150/5 Nguyễn Hoàng, Nam Dương, Thanh Khê, Đà Nẵng",
+    "lat": "16.06195435106221",
+    "lng": "108.2134279410138",
+    "alias": "ca-noc-cafe",
+    "photo": "public/thumbs/90x90x1/100_298566617-360277976305844-3724787690594496248-n-nblqP0zmAU.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Mi-a Cafe",
+    "address": "40 Nguyễn Khánh Toàn, Hoà Cường Bắc, Cẩm Lệ, Đà Nẵng",
+    "lat": "16.037361699191962",
+    "lng": "108.21169508518692",
+    "alias": "mi-a-cafe",
+    "photo": "public/thumbs/90x90x1/100_457244875-122111155088449185-663298024451998783-n-4yMAxv5veQ.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "The Local Beans",
+    "address": "186 Phan Châu Trinh, Phước Ninh, Hải Châu, Đà Nẵng",
+    "lat": "16.06176545601055",
+    "lng": "108.2194953251405",
+    "alias": "the-local-beans",
+    "photo": "public/thumbs/90x90x1/100_453749016-1018405303620221-9069878389140281939-n-U8yaz3gKR4.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Bãi xe chợ Hàn",
+    "address": "05 Nguyễn Thái Học, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.068001976420454",
+    "lng": "108.22462096788706",
+    "alias": "bai-xe-cho-han",
+    "photo": "public/thumbs/90x90x1/100_456164980-122127023804332827-5758807939358457250-n-7tOe22lGn9.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Nadola Coffee",
+    "address": "82 Nguyễn Chí Thanh, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.07128632306548",
+    "lng": "108.22125401718334",
+    "alias": "nadola-coffee",
+    "photo": "public/thumbs/90x90x1/100_420895933-122125934474092390-2201634023452861843-n-C7yHo929Wj.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Starbucks",
+    "address": "50 Bạch Đằng, Hòa Thuận Đông, Hải Châu, Đà Nẵng",
+    "lat": "16.073502589931316",
+    "lng": "108.2246888491904",
+    "alias": "starbucks",
+    "photo": "public/thumbs/90x90x1/100_341277078-1731554843913603-7810393911126803149-n-7Kklcj1pwm.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Ikigai Garden Cafe",
+    "address": "60 Nguyễn Chí Thanh, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.07489468337597",
+    "lng": "108.22073575925273",
+    "alias": "ikigai-garden-cafe",
+    "photo": "public/thumbs/90x90x1/100_362913165-708984457909398-1758814768870743168-n-G3AitCspUt.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Incheon Cafe",
+    "address": "35 Lý Thường Kiệt, Thạch Thang, Hải Châu, Đà Nẵng",
+    "lat": "16.08027185354772",
+    "lng": "108.22029932831502",
+    "alias": "incheon-cafe",
+    "photo": "public/thumbs/90x90x1/100_282341212-5027978357255464-5861400398098385307-n-8Ntv6vRPjF.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Xi-nê Bistro &Jass",
+    "address": "82 Trần Phú, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.06976728073998",
+    "lng": "108.22393115397713",
+    "alias": "xi-ne-bistro-jass",
+    "photo": "public/thumbs/90x90x1/100_439437502-122099197022287317-5279897035697653701-n-ezD5MjekLp.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "P Coffee",
+    "address": "53-55 Nguyễn Văn Linh, Bình Hiên, Hải Châu, Đà Nẵng",
+    "lat": "16.060983616265077",
+    "lng": "108.22101734786362",
+    "alias": "p-coffee",
+    "photo": "public/thumbs/90x90x1/100_448889315-955929293202344-1107661465065536379-n-aCgkIm327a.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Liberty Coffee",
+    "address": "351 Nguyễn Tất Thành, Thanh Bình, Hải Châu, Đà Nẵng",
+    "lat": "16.078157586589363",
+    "lng": "108.2095875343691",
+    "alias": "libertycoffee",
+    "photo": "public/thumbs/90x90x1/100_444488693-2762248570598202-1969144321158841044-n-T9nczt9boE.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Cafe 'De Ante",
+    "address": "43 Trần Văn Trứ, Bình Thuận, Hải Châu, Đà Nẵng",
+    "lat": "16.05631899087045",
+    "lng": "108.22289651349229",
+    "alias": "cafe-de-ante",
+    "photo": "public/thumbs/90x90x1/100_270449716-895962711211035-4400763369594996510-n-tPta1hYFYB.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Cửa Ngõ Cafe",
+    "address": "102 Nguyễn Thị Minh Khai, Thạch Thang, Hải Châu, Đà Nẵng",
+    "lat": "16.07322873885622",
+    "lng": "108.22233317091546",
+    "alias": "cua-ngo-cafe",
+    "photo": "public/thumbs/90x90x1/100_271149134-227788609539427-3070895904997234337-n-Ea0OiMSYjF.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Bòng Coffee",
+    "address": "50 Yên Bái, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.069185958225365",
+    "lng": "108.22318090922451",
+    "alias": "bong-coffee",
+    "photo": "public/thumbs/90x90x1/100_453392523-455338783983741-1263356528427617513-n-grLPHCCjA3.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Cà Phê Xíu",
+    "address": "130 Nguyễn Thị Minh Khai, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.070836571120083",
+    "lng": "108.21853907421492",
+    "alias": "ca-phe-xiu",
+    "photo": "public/thumbs/90x90x1/100_454581971-932499515556804-1111060024669897365-n-dE5TOexXu5.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Tà Xùa - Rừng nhiệt đới",
+    "address": "17 Cao Thắng, Thanh Bình, Hải Châu, Đà Nẵng",
+    "lat": "16.076032207611497",
+    "lng": "108.21457595213184",
+    "alias": "ta-xua-rung-nhiet-doi",
+    "photo": "public/thumbs/90x90x1/100_440430204-122143744142142075-7631680654631632906-n-upIqJVUvQA.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Daily Garden Coffee",
+    "address": "404 Nguyễn Tri Phương, Vĩnh Trung, Hải Châu, Đà Nẵng",
+    "lat": "16.053928851586104",
+    "lng": "108.20960915028613",
+    "alias": "daily-garden-coffee",
+    "photo": "public/thumbs/90x90x1/100_461904336-528288160153955-7183590088458834659-n-ZObHHavvQq.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Kashi Garden Coffee",
+    "address": "03 Đảo Xanh 1, Hoà Cường Bắc, Hải Châu, Đà Nẵng",
+    "lat": "16.04797513502885",
+    "lng": "108.22816625951278",
+    "alias": "kashi-garden-coffee",
+    "photo": "public/thumbs/90x90x1/100_384100549-805019924967575-1350144050058534315-n-s5Y0SKNfTu.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Cà phê Hạt",
+    "address": "111 Vân Đồn, Sơn Trà, Đà Nẵng",
+    "lat": "16.08846550864086",
+    "lng": "108.23190088835052",
+    "alias": "ca-phe-hat",
+    "photo": "public/thumbs/90x90x1/100_441930580-986929063443118-1469402665362608104-n-Tu03c0knfa.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "KYODO FOODS Đà Nẵng",
+    "address": "40 Trưng Nữ Vương, Bình Hiên, Hải Châu, Đà Nẵng",
+    "lat": "16.061874857738307",
+    "lng": "108.22248885274897",
+    "alias": "kyodo-foods-da-nang",
+    "photo": "public/thumbs/90x90x1/100_452118662-445116415173352-4975198600385329267-n-ZjUAXj18vd.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Gong cha Đà Nẵng",
+    "address": "1 Nguyễn Văn Linh, Bình Hiên, Hải Châu, Đà Nẵng",
+    "lat": "16.607069863997232",
+    "lng": "108.14245081862647",
+    "alias": "gong-cha-da-nang",
+    "photo": "public/thumbs/90x90x1/100_428712404-698923085790353-401140580927941355-n-ufcMhhZq8r.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Koi Thé Đà Nẵng",
+    "address": "87 Nguyễn Văn Linh, Nam Dương, Hải Châu, Đà Nẵng",
+    "lat": "16.54266796577781",
+    "lng": "108.20775376653926",
+    "alias": "koi-the-da-nang",
+    "photo": "public/thumbs/90x90x1/100_453061044-880823157414282-8545709103640806191-n-YcRFs6G9Ky.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Trà sữa Money",
+    "address": "17 Nguyễn Du, Thạch Thang, Hải Châu, Đà Nẵng",
+    "lat": "16.078993513075307",
+    "lng": "108.22253509651273",
+    "alias": "tra-sua-money",
+    "photo": "public/thumbs/90x90x1/100_327171914-1776666326052184-5152645706728012729-n-tjSgn4a8kY.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "The Alley Đà Nẵng",
+    "address": "64 Nguyễn Văn Linh, Nam Dương, Hải Châu, Đà Nẵng",
+    "lat": "16.061237579525482",
+    "lng": "108.21574147823426",
+    "alias": "the-alley-da-nang",
+    "photo": "public/thumbs/90x90x1/100_49114103-364913347390933-6567522732416696320-n-2tfu005cfH.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Trà Sữa R &B Đà Nẵng",
+    "address": "75 Hoàng Văn Thụ, Phước Ninh, Hải Châu, Đà Nẵng",
+    "lat": "16.062924784285322",
+    "lng": "108.22078280401425",
+    "alias": "tra-sua-rb-da-nang",
+    "photo": "public/thumbs/90x90x1/100_450094634-1439813110229184-5701042812339429362-n-YfuFdQvUyN.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Cloudy Nitrogen Icecream &Drinks",
+    "address": "91 Phan Châu Trinh, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.067150606526482",
+    "lng": "108.22030972349789",
+    "alias": "cloudy-nitrogen-icecream-drinks",
+    "photo": "public/thumbs/90x90x1/100_307032720-448818130617065-7008730959972321350-n-s4aJVjtdy4.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Phê la Đà Nẵng",
+    "address": "35-41 Nguyễn Văn Linh, Bình Hiên, Hải Châu, Đà Nẵng",
+    "lat": "16.06089842105106",
+    "lng": "108.22100094420077",
+    "alias": "phe-la-da-nang",
+    "photo": "public/thumbs/90x90x1/100_468502230-975058464644547-4675971398538948929-n-AcsfozWJG2.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "McDonald 's Nguyễn Văn Linh",
+    "address": "5 - 7 Nguyễn Văn Linh, Phường Bình Hiên, Đà Nẵng",
+    "lat": "16.06181577886639",
+    "lng": "108.22233288012582",
+    "alias": "mcdonalds-nguyen-van-linh",
+    "photo": "public/thumbs/90x90x1/100_387199512-726541032846603-8738338101954772993-n-RR0joTtPLI.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Pizza 4P 's Indochina Da Nang",
+    "address": "Indochina Riverside, Tầng 2, 74 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.07029760388222",
+    "lng": "108.22486456168672",
+    "alias": "pizza-4ps-indochina-da-nang",
+    "photo": "public/thumbs/90x90x1/100_346494963-216739501220182-8970577498908928937-n-DWBR4NJ3hp.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Chè Thái Trần Liên - Hoàng Diệu",
+    "address": "189 Hoàng Diệu, Nam Dương, Hải Châu, Đà Nẵng",
+    "lat": "16.06047910193939",
+    "lng": "108.21726915742849",
+    "alias": "che-thai-tran-lien-hoang-dieu",
+    "photo": "public/thumbs/90x90x1/100_327351659-507882281430369-2550709383988678971-n-MHMX1iMPRN.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Chè Thái Trần Liên - 2/9",
+    "address": "Lô 16-17 Đường 2 Tháng 9, Bình Hiên, Hải Châu, Đà Nẵng",
+    "lat": "16.05530277990765",
+    "lng": "108.22235942838807",
+    "alias": "che-thai-tran-lien-29",
+    "photo": "public/thumbs/90x90x1/100_327351659-507882281430369-2550709383988678971-n-DEXzUVUpaA.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Chè Liên Đà Nẵng - Lê Thanh Nghị",
+    "address": "80 Lê Thanh Nghị, Hòa Cường Bắc, Hải Châu, Đà Nẵng",
+    "lat": "16.03916234447751",
+    "lng": "108.21802797662183",
+    "alias": "che-lien-da-nang-le-thanh-nghi",
+    "photo": "public/thumbs/90x90x1/100_244506345-107745888346693-808606157143661928-n-0lRj4ZsMmE.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Chè Liên Đà Nẵng - Điện Biên Phủ 1",
+    "address": "161 Điện Biên Phủ, Chính Gián, Thanh Khê, Đà Nẵng",
+    "lat": "16.065648126088952",
+    "lng": "108.19798131304786",
+    "alias": "che-lien-da-nang-dien-bien-phu-1",
+    "photo": "public/thumbs/90x90x1/100_311116004-146879388045854-6243053996496156137-n-Ai7t5xLISh.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Chè Liên Đà Nẵng - Điện Biên Phủ 2",
+    "address": "320 Điện Biên Phủ, Chính Gián, Thanh Khê, Đà Nẵng",
+    "lat": "16.06698209969173",
+    "lng": "108.19364369025337",
+    "alias": "che-lien-da-nang-dien-bien-phu-2",
+    "photo": "public/thumbs/90x90x1/100_244506345-107745888346693-808606157143661928-n-PbcByuyEyN.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Chè Liên Đà Nẵng - Hải Phòng",
+    "address": "175 Hải Phòng, Tam Thuận, Thanh Khê, Đà Nẵng",
+    "lat": "16.071761973242225",
+    "lng": "108.21279152035541",
+    "alias": "che-lien-da-nang-hai-phong",
+    "photo": "public/thumbs/90x90x1/100_244506345-107745888346693-808606157143661928-n-p7hGT4VjRb.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Quán Bớp Bư Bự",
+    "address": "39 Nguyễn Trãi, Hải Châu 2, Hải Châu, Đà Nẵng",
+    "lat": "16.064824671909985",
+    "lng": "108.21628376306148",
+    "alias": "quan-bop-bu-bu",
+    "photo": "public/thumbs/90x90x1/100_326505495-1121245235224637-7156136072762771534-n-DfIi4uH29K.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Chè Xuân Trang - Lê Duẩn",
+    "address": "31 Lê Duẩn, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.072092299029247",
+    "lng": "108.22091801437377",
+    "alias": "che-xuan-trang-le-duan",
+    "photo": "public/thumbs/90x90x1/100_download-1zfY2f4dYF.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Chè Xuân Trang - Phan Đăng Lưu",
+    "address": "122 Phan Đăng Lưu, Hoà Cường Bắc, Hải Châu, Đà Nẵng",
+    "lat": "16.03752786667956",
+    "lng": "108.2174129603944",
+    "alias": "che-xuan-trang-phan-dang-luu",
+    "photo": "public/thumbs/90x90x1/100_download-1zfy2f4dyf-D221eURF4i.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Tàu hủ YUMMY",
+    "address": "104 Vân Đồn, Nại Hiên Đông, Sơn Trà, Đà Nẵng",
+    "lat": "16.090464753313302",
+    "lng": "108.23494635778499",
+    "alias": "tau-hu-yummy",
+    "photo": "public/thumbs/90x90x1/100_290218121-109824628438184-5473933319450568853-n-lUfvxnPPK7.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Mỳ cay So Hot",
+    "address": "104 Ngô Văn Sở, Hoà Khánh Nam, Liên Chiểu, Đà Nẵng",
+    "lat": "16.068093922526334",
+    "lng": "108.1485610761796",
+    "alias": "my-cay-so-hot",
+    "photo": "public/thumbs/90x90x1/100_444481242-1026090602859221-8596468950103970191-n-rbYyFiYcwq.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Tiệm chè ngon Chang Hi",
+    "address": "177 Nguyễn Văn Linh, Nam Dương, Hải Châu, Đà Nẵng",
+    "lat": "16.060153184618045",
+    "lng": "108.2143004730079",
+    "alias": "tiem-che-ngon-chang-hi",
+    "photo": "public/thumbs/90x90x1/100_432754955-295296756916070-1557684313329794686-n-71in643qsR.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "The Power House 3 Legacy",
+    "address": "153-157, Triệu Nữ Vương, Nam Dương, Hải Châu, Đà Nẵng",
+    "lat": "16.062542354398857",
+    "lng": "108.2170444269873",
+    "alias": "the-power-house-3-legacy",
+    "photo": "public/thumbs/90x90x1/100_453060893-1029378685857380-1534315736443865688-n-0iDnxsyHxD.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "The Power House 1",
+    "address": "44-46 Phan Đăng Lưu, Hoà Cường Bắc, Hải Châu, Đà Nẵng",
+    "lat": "16.037906886249537",
+    "lng": "108.22193838909882",
+    "alias": "the-power-house-1",
+    "photo": "public/thumbs/90x90x1/100_261542842-397061745482220-205209311697936097-n-Bj32IK22UA.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "The Power House 2",
+    "address": "17 Âu Cơ, Hoà Khánh Bắc, Liên Chiểu, Đà Nẵng",
+    "lat": "16.07148665607677",
+    "lng": "108.14995951349256",
+    "alias": "the-power-house-2",
+    "photo": "public/thumbs/90x90x1/100_261542842-397061745482220-205209311697936097-n-VxsqNJXlWe.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "The Power House 5 Nhà hát lớn",
+    "address": "89 Nguyễn Thái Học, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.06923316046672",
+    "lng": "108.22137882374537",
+    "alias": "the-power-house-5-nha-hat-lon",
+    "photo": "public/thumbs/90x90x1/100_261542842-397061745482220-205209311697936097-n-gq2nArlh67.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Cộng Café - Nguyễn Thái Học",
+    "address": "39 Nguyễn Thái Học, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.068715236072332",
+    "lng": "108.22341418287188",
+    "alias": "cong-cafe-nguyen-thai-hoc",
+    "photo": "public/thumbs/90x90x1/100_453176672-924555143049811-2779791948820607282-n-1ZVyTklNcS.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Cộng Café - Bạch Đằng",
+    "address": "98-96 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.069828676760498",
+    "lng": "108.22431540501631",
+    "alias": "cong-cafe-bach-dang",
+    "photo": "public/thumbs/90x90x1/100_453176672-924555143049811-2779791948820607282-n-mdOSn1gjzc.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Cộng Café - Lý Tự Trọng",
+    "address": "23 Lý Tự Trọng, Thạch Thang, Hải Châu, Đà Nẵng",
+    "lat": "16.078406084920186",
+    "lng": "108.22088217779941",
+    "alias": "cong-cafe-ly-tu-trong",
+    "photo": "public/thumbs/90x90x1/100_453176672-924555143049811-2779791948820607282-n-d0UOSuqjWK.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Út Tịch Café - Nguyễn Thái Học",
+    "address": "73 Nguyễn Thái Học, Hải Châu, Đà Nẵng",
+    "lat": "16.068265152248408",
+    "lng": "108.22280720697707",
+    "alias": "ut-tich-cafe-nguyen-thai-hoc",
+    "photo": "public/thumbs/90x90x1/100_294892358-428794285932007-985037976089827562-n-TiF4fzZQoB.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Út Tịch Café - Bạch Đằng",
+    "address": "102 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.06912085452717",
+    "lng": "108.22502807583302",
+    "alias": "ut-tich-cafe-bach-dang",
+    "photo": "public/thumbs/90x90x1/100_294892358-428794285932007-985037976089827562-n-mleVzZYTNP.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Katinat - Nguyễn Văn Linh",
+    "address": "9 Nguyễn Văn Linh, Bình Hiên, Hải Châu, Đà Nẵng",
+    "lat": "16.061054569422875",
+    "lng": "108.22200736321807",
+    "alias": "katinat-nguyen-van-linh",
+    "photo": "public/thumbs/90x90x1/100_436139123-419643584097841-6689470492374788023-n-kHhZRTj2WC.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Wind Garden Coffee",
+    "address": "72 Lê Mạnh Trinh, Phước Mỹ, Sơn Trà, Đà Nẵng",
+    "lat": "16.074723885273393",
+    "lng": "108.2436283510361",
+    "alias": "wind-garden-coffee",
+    "photo": "public/thumbs/90x90x1/100_466989633-550086384440998-9083601077047525866-n-1QMkUJgYh0.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "La Café",
+    "address": "208 Bạch Đằng, Phước Ninh, Hải Châu, Đà Nẵng",
+    "lat": "16.069943124104007",
+    "lng": "108.22328514103842",
+    "alias": "la-cafe",
+    "photo": "public/thumbs/90x90x1/100_335454100-170978615723424-2623798358107425625-n-45vE1Ol2Ke.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Bông Food &Drink Điện Biên Phủ",
+    "address": "559 Điện Biên Phủ, Thanh Khê Đông, Thanh Khê, Đà Nẵng",
+    "lat": "16.06562362988621",
+    "lng": "108.1842804340188",
+    "alias": "bong-food-drinkdien-bien-phu",
+    "photo": "public/thumbs/90x90x1/100_433444146-724851249808918-4045612994820945116-n-dpxEGeqnNg.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Bông Food &Drink Lý Thường Kiệt",
+    "address": "34 Lý Thường Kiệt, Thạch Thang, Hải Châu, Đà Nẵng",
+    "lat": "16.08223118098637",
+    "lng": "108.21875647496267",
+    "alias": "bong-food-drinkly-thuong-kiet",
+    "photo": "public/thumbs/90x90x1/100_433444146-724851249808918-4045612994820945116-n-S7gGlqPdT0.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Bông Food &Drink Nguyễn Thị Minh Khai",
+    "address": "123 Nguyễn Thị Minh Khai, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.071262140614913",
+    "lng": "108.21867064428226",
+    "alias": "bong-food-drinknguyen-thi-minh-khai",
+    "photo": "public/thumbs/90x90x1/100_433444146-724851249808918-4045612994820945116-n-PhnZ4Te48o.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Bông Food &Drink Núi Thành",
+    "address": "500 Núi Thành, Hoà Cường Nam, Hải Châu, Đà Nẵng",
+    "lat": "16.036536604853907",
+    "lng": "108.2218463794579",
+    "alias": "bong-food-drinknui-thanh",
+    "photo": "public/thumbs/90x90x1/100_433444146-724851249808918-4045612994820945116-n-F56W0T07a5.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Bông Food &Drink - 2/9",
+    "address": "44 Đường 2 Tháng 9, Bình Hiên, Hải Châu, Đà Nẵng",
+    "lat": "16.059632647646886",
+    "lng": "108.22236136354043",
+    "alias": "bong-food-drink-29",
+    "photo": "public/thumbs/90x90x1/100_433444146-724851249808918-4045612994820945116-n-6qk6671qil.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Bông Food &Drink Tôn Đức Thắng",
+    "address": "840 Tôn Đức Thắng, Hoà Khánh Nam, Liên Chiểu, Đà Nẵng",
+    "lat": "16.06945467702934",
+    "lng": "108.15216989713039",
+    "alias": "bong-food-drinkton-duc-thang",
+    "photo": "public/thumbs/90x90x1/100_433444146-724851249808918-4045612994820945116-n-NWGSxskiz4.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Bông Food &Drink Nguyễn Hữu Thọ",
+    "address": "522 Nguyễn Hữu Thọ, Khuê Trung, Cẩm Lệ, Đà Nẵng",
+    "lat": "16.03067968278631",
+    "lng": "108.20854262399236",
+    "alias": "bong-food-drinknguyen-huu-tho",
+    "photo": "public/thumbs/90x90x1/100_433444146-724851249808918-4045612994820945116-n-0y4oZ0iraM.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "T-Gaden Coffee",
+    "address": "Nguyễn Sinh Sắc, Hòa Minh, Liên Chiểu, Đà Nẵng",
+    "lat": "16.071204403689073",
+    "lng": "108.15885253556999",
+    "alias": "t-gaden-coffee",
+    "photo": "public/thumbs/90x90x1/100_327129300-887996992450180-3347644217486809869-n-7viDHOAXTj.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Ocha House",
+    "address": "30 Trần Văn Kỷ, Hoà Khánh Nam, Liên Chiểu, Đà Nẵng",
+    "lat": "16.06922912138594",
+    "lng": "108.14960833391333",
+    "alias": "ocha-house",
+    "photo": "public/thumbs/90x90x1/100_454005273-506195088437452-1637671607738610959-n-939hT3zhDI.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Túc Tắc Tea Nguyễn Lương Bằng",
+    "address": "25 Nguyễn Lương Bằng, Hoà Khánh Bắc, Liên Chiểu, Đà Nẵng",
+    "lat": "16.075737855240867",
+    "lng": "108.14887526332241",
+    "alias": "tuc-tac-tea-nguyen-luong-bang",
+    "photo": "public/thumbs/90x90x1/100_447301764-122207770484001292-1715624057882650808-n-xpxEpIOEin.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Túc Tắc Tea Hải Phòng",
+    "address": "6 Hải Phòng, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.076111758573216",
+    "lng": "108.21996436186751",
+    "alias": "tuc-tac-tea-hai-phong",
+    "photo": "public/thumbs/90x90x1/100_447301764-122207770484001292-1715624057882650808-n-Q7H5UPSTk9.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Túc Tắc Tea Lê Đình Dương",
+    "address": "70 Lê Đình Dương, Phước Ninh, Hải Châu, Đà Nẵng",
+    "lat": "16.064953536506255",
+    "lng": "108.21902452796914",
+    "alias": "tuc-tac-tea-le-dinh-duong",
+    "photo": "public/thumbs/90x90x1/100_447301764-122207770484001292-1715624057882650808-n-GfhaMjBkJj.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Túc Tắc Tea Phan Thanh",
+    "address": "128 Phan Thanh, Thạc Gián, Thanh Khê, Đà Nẵng",
+    "lat": "16.06560696112982",
+    "lng": "108.2074894190333",
+    "alias": "tuc-tac-tea-phan-thanh",
+    "photo": "public/thumbs/90x90x1/100_447301764-122207770484001292-1715624057882650808-n-8OCcPNYtUm.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Túc Tắc Tea Núi Thành",
+    "address": "439 Núi Thành, Hoà Cường Bắc, Hải Châu, Đà Nẵng",
+    "lat": "16.04169588012358",
+    "lng": "108.22131102566016",
+    "alias": "tuc-tac-tea-nui-thanh",
+    "photo": "public/thumbs/90x90x1/100_447301764-122207770484001292-1715624057882650808-n-8Jc2SDr5ti.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Túc Tắc Tea Dũng Sỹ Thanh Khê",
+    "address": "58 Dũng Sĩ Thanh Khê, Thanh Khê Tây, Thanh Khê, Đà Nẵng",
+    "lat": "16.075140223423432",
+    "lng": "108.17950339576589",
+    "alias": "tuc-tac-tea-dung-sy-thanh-khe",
+    "photo": "public/thumbs/90x90x1/100_447301764-122207770484001292-1715624057882650808-n-HD9BKHiuoy.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Túc Tắc Tea Lê Độ",
+    "address": "38 Lê Độ, Chính Gián, Thanh Khê, Đà Nẵng",
+    "lat": "16.072995870849297",
+    "lng": "108.20199103403668",
+    "alias": "tuc-tac-tea-le-do",
+    "photo": "public/thumbs/90x90x1/100_447301764-122207770484001292-1715624057882650808-n-QccqpBVoeJ.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Túc Tắc Tea Châu Thị Vĩnh Tế",
+    "address": "112 Châu Thị Vĩnh Tế, Bắc Mỹ Phú, Ngũ Hành Sơn, Đà Nẵng",
+    "lat": "16.054520491180813",
+    "lng": "108.24027151750529",
+    "alias": "tuc-tac-tea-chau-thi-vinh-te",
+    "photo": "public/thumbs/90x90x1/100_447301764-122207770484001292-1715624057882650808-n-ldEaZyTAhD.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Túc Tắc Tea Phạm Như Xương",
+    "address": "24 Phạm Như Xương, Hoà Khánh Nam, Liên Chiểu, Đà Nẵng",
+    "lat": "16.066830419861883",
+    "lng": "108.15642836648551",
+    "alias": "tuc-tac-tea-pham-nhu-xuong",
+    "photo": "public/thumbs/90x90x1/100_447301764-122207770484001292-1715624057882650808-n-j4VC9zn9pc.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Bảo Thạch Lâm Cafe & Restaurant",
+    "address": "179 Nguyễn Chánh, Hoà Khánh Bắc, Liên Chiểu, Đà Nẵng",
+    "lat": "16.087997336100965",
+    "lng": "108.15377386135883",
+    "alias": "bao-thach-lam-cafe-restaurant",
+    "photo": "public/thumbs/90x90x1/100_313407264-145613161543900-7754900604265546311-n-zn2D4PpOUD.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Nhậm Cà phê",
+    "address": "49 Ngô Thì Nhậm, Hoà Khánh Nam, Liên Chiểu, Đà Nẵng",
+    "lat": "16.070777799342917",
+    "lng": "108.15387122883278",
+    "alias": "nham-ca-phe",
+    "photo": "public/thumbs/90x90x1/100_262811791-447686103543945-6108673210504401496-n-VEuJQafP4y.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "The KiWi Coffee",
+    "address": "Đường Dương Sơn 11, Hoà Châu, Hòa Vang, Đà Nẵng",
+    "lat": "15.976392030188533",
+    "lng": "108.18612008223323",
+    "alias": "the-kiwi-coffee",
+    "photo": "public/thumbs/90x90x1/100_130460608-404307211020566-2260968621037189231-n-iSMo7Oo4st.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Mỹ Phương Food",
+    "address": "Thôn Nhơn Thọ 2, Xã Hòa Phước, Huyện Hòa Vang, Đà Nẵng",
+    "lat": "16.032341119759703",
+    "lng": "108.12107132365348",
+    "alias": "my-phuong-food",
+    "photo": "public/thumbs/90x90x1/100_315943644-637387491510870-3866491983533599566-n-WVImZmOBg0.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Chả bò Yến Tiên",
+    "address": "Thôn An Ngãi Tây 2, Hòa Sơn, Hòa Vang, Đà Nẵng",
+    "lat": "16.118307024147267",
+    "lng": "107.98205222398946",
+    "alias": "cha-bo-yen-tien",
+    "photo": "public/thumbs/90x90x1/100_310001816-467065165523267-5480230287139184021-n-iSvGpvQHBD.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Bánh khô mè Bà Liễu Mẹ",
+    "address": "26 Lê Đình Dương, Phước Ninh, Hải Châu, Đà Nẵng",
+    "lat": "16.06135598185696",
+    "lng": "108.22185739868416",
+    "alias": "banh-kho-me-ba-lieu-me",
+    "photo": "public/thumbs/90x90x1/100_286660738-7735323836507909-2973018237233484359-n-0xMgKXnlow.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Vigift - Đặc sản Đà Nẵng",
+    "address": "347 Nguyễn Văn Linh, Thạc Gián, Thanh Khê, Đà Nẵng",
+    "lat": "16.059468207926383",
+    "lng": "108.20822319644127",
+    "alias": "vigift-dac-san-da-nang",
+    "photo": "public/thumbs/90x90x1/100_453068599-920692283407767-4608662554239745144-n-dk1poVWq59.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Trung tâm thương mại Vincom Plaza Ngô Quyền",
+    "address": "910A Ngô Quyền, An Hải, Sơn Trà, Đà Nẵng",
+    "lat": "16.071744579738358",
+    "lng": "108.23023842550573",
+    "alias": "trung-tam-thuong-mai-vincom-plaza-ngo-quyen",
+    "photo": "public/thumbs/90x90x1/100_457172349-1107493864521675-282664700603607340-n-nYZpSYq76o.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Siêu thị K-Mark",
+    "address": "Lô 03 Phạm Văn Đồng, An Hải Bắc, Sơn Trà, Đà Nẵng",
+    "lat": "16.071224361667344",
+    "lng": "108.23626769662067",
+    "alias": "sieu-thi-k-mark",
+    "photo": "public/thumbs/90x90x1/100_294492347-422595753245328-8484289845779073989-n-adzbZCfOJN.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Jolymart",
+    "address": "31 Yên Bái, Hải Châu 1, Hải Châu, Đà Nẵng",
+    "lat": "16.069111377614462",
+    "lng": "108.22276002158198",
+    "alias": "jolymart",
+    "photo": "public/thumbs/90x90x1/100_453145269-899238942223317-1832895589431069199-n-6LK6dnOiKb.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Coopmart Sơn Trà",
+    "address": "Bình Than, Nại Hiên Đông, Sơn Trà, Đà Nẵng",
+    "lat": "16.09439425135355",
+    "lng": "108.24254969667045",
+    "alias": "coopmart-son-tra",
+    "photo": "public/thumbs/90x90x1/100_451547860-1005747028218465-3037222172554331080-n-TDsc9hgYjU.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Coopmart Đà Nẵng",
+    "address": "478 Điện Biên Phủ, Thanh Khê Đông, Thanh Khê, Đà Nẵng",
+    "lat": "16.06676697536019",
+    "lng": "108.18696769919076",
+    "alias": "coopmart-da-nang",
+    "photo": "public/thumbs/90x90x1/100_460656940-1052156356915979-1657664316565721447-n-gClD3zF0Tb.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Go Đà Nẵng",
+    "address": "Khu thương Mại, 257 Hùng Vương, Vĩnh Trung, Thanh Khê, Đà Nẵng",
+    "lat": "16.06712092846637",
+    "lng": "108.21347698132611",
+    "alias": "go-da-nang",
+    "photo": "public/thumbs/90x90x1/100_453070357-503872275362577-5965391655905489044-n-Z0ltBiO8Si.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Lotte Mart Đà Nẵng",
+    "address": "6 Nại Nam, Hoà Cường Bắc, Hải Châu, Đà Nẵng",
+    "lat": "16.035058601785938",
+    "lng": "108.22914399918608",
+    "alias": "lotte-mart-da-nang",
+    "photo": "public/thumbs/90x90x1/100_454757975-1014513710468238-1017009016376798213-n-mOcYx4ucfC.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Chợ Cồn",
+    "address": "90 Hùng Vương, Hải Châu, Đà Nẵng",
+    "lat": "16.06778979759545",
+    "lng": "108.21446918717926",
+    "alias": "cho-con",
+    "photo": "public/thumbs/90x90x1/100_cho-con-thanh-pho-da-nang-1536x864-qEzYybfOf3.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Chợ Hàn",
+    "address": "119 Trần Phú, Hải Châu, Đà Nẵng",
+    "lat": "16.068442933012474",
+    "lng": "108.22424297789044",
+    "alias": "cho-han",
+    "photo": "public/thumbs/90x90x1/100_cho-han-da-nang-119-tran-phu-hai-chau-nhung-khu-cho-noi-tieng-tai-da-nang-khong-the-bo-qua-010-1536x1024-zBaZVdSPkq.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Chợ Bắc Mỹ An",
+    "address": "25 Nguyễn Bá Lân, Bắc Mỹ An, Ngũ Hành Sơn, Đà Nẵng",
+    "lat": "16.041804128050458",
+    "lng": "108.24225566598182",
+    "alias": "cho-bac-my-an",
+    "photo": "public/thumbs/90x90x1/100_cho-bac-my-an-1-WQHBVIcgEm.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Chợ Tuý Loan",
+    "address": "40 Túy Loan 4, Hoà Phong, Hòa Vang, Đà Nẵng",
+    "lat": "15.99024798669383",
+    "lng": "108.14041517947292",
+    "alias": "cho-tuy-loan",
+    "photo": "public/thumbs/90x90x1/100_241183563-1739808759551444-5785742482027360384-n-43xPpJipfl.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Chợ đêm Sơn Trà",
+    "address": "Mai Hắc Đế, An Hải Trung, Sơn Trà, Đà Nẵng",
+    "lat": "16.061814295206176",
+    "lng": "108.2319425794748",
+    "alias": "cho-dem-son-tra",
+    "photo": "public/thumbs/90x90x1/100_cac-khu-cho-du-lich-noi-tieng-nhat-da-nang-cho-dem-son-tra-danang-fantasticity-com-07-V2UmOgD2wG.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Chợ đêm Helio",
+    "address": "Đường 2/9, Hoà Cường, Hải Châu, Đà Nẵng",
+    "lat": "16.03750146683259",
+    "lng": "108.22450285248951",
+    "alias": "cho-dem-helio",
+    "photo": "public/thumbs/90x90x1/100_310086468-461767655984385-5398865164016800871-n-QtaMcNvn4d.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Phố điểm tâm Huỳnh Thúc Kháng",
+    "address": "Đường Huỳnh Thúc Kháng, Hải Châu, Đà Nẵng",
+    "lat": "16.059376129175806",
+    "lng": "108.2182190456751",
+    "alias": "pho-diem-tam-huynh-thuc-khang",
+    "photo": "public/thumbs/90x90x1/100_pho-diem-tam-duong-huynh-thuc-khang-tong-hop-cac-cho-am-thuc-noi-tieng-tai-da-nang-mtF7TIACBR.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Phố ẩm thực đêm Phạm Hồng Thái",
+    "address": "Đường Phạm Hồng Thái, Hải Châu, Đà Nẵng",
+    "lat": "16.067522959778167",
+    "lng": "108.22110283714673",
+    "alias": "pho-am-thuc-dem-pham-hong-thai",
+    "photo": "public/thumbs/90x90x1/100_tuyen-pho-am-thuc-pham-hong-thai-tong-hop-cac-cho-am-thuc-noi-tieng-tai-da-nang-cMyb4v1n1k.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Phố Yaourt Bằng Lăng",
+    "address": "Dưới chân cầu Trần Thị Lý, An Hải Tây, Sơn Trà, Đà Nẵng",
+    "lat": "16.045129714254386",
+    "lng": "108.24117081552859",
+    "alias": "pho-yaourt-bang-lang",
+    "photo": "public/thumbs/90x90x1/100_1462959963-pho-an-vat-da-nang-4-ivdFsA9Guk.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Phố ẩm thực Lê Thanh Nghị",
+    "address": "Đường Lê Thanh Nghị, Hải Châu, Đà Nẵng",
+    "lat": "16.03452939055419",
+    "lng": "108.21858852550477",
+    "alias": "pho-am-thuc-le-thanh-nghi",
+    "photo": "public/thumbs/90x90x1/100_images-uLe5kxhTMd.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Phố ẩm thực Phan Tứ - Châu Thị Vĩnh Tế",
+    "address": "Phan Tứ, Châu Thị Vĩnh Tế, Ngũ Hành Sơn, Đà Nẵng",
+    "lat": "16.045389058393297",
+    "lng": "108.24197978953501",
+    "alias": "pho-am-thuc-phan-tu-chau-thi-vinh-te",
+    "photo": "public/thumbs/90x90x1/100_270045309-131299192689098-7037282639880288802-n-D5eTSjkhdX.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Phố giải khát Như Nguyệt",
+    "address": "Đường Như Nguyệt, Hải Châu, Đà Nẵng",
+    "lat": "16.089934073162844",
+    "lng": "108.22000186598322",
+    "alias": "pho-giai-khat-nhu-nguyet",
+    "photo": "public/thumbs/90x90x1/100_1376038094-vuon-yeu-1-heNfSriqS2.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Golden Pastry",
+    "address": "195 Mạc Đăng Doanh, Hoà Xuân, Cẩm Lệ, Đà Nẵng",
+    "lat": "16.01355395663739",
+    "lng": "108.22317122209039",
+    "alias": "golden-pastry",
+    "photo": "public/thumbs/90x90x1/100_255743646-3678274879063617-1546016852578234552-n-NVXMbXiCiD.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Hanigo Đặc Sản Đà Nẵng NGON",
+    "address": "70 Hà Bổng, Phước Mỹ, Sơn Trà, Đà Nẵng",
+    "lat": "16.066079161136695",
+    "lng": "108.24423662158183",
+    "alias": "hanigo-dac-san-da-nang-ngon",
+    "photo": "public/thumbs/90x90x1/100_432357375-942998617545188-1739402718397952325-n-r98MQvDnOQ.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-vat"
+    ]
+  }
+]

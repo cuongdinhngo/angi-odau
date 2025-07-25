@@ -1,0 +1,290 @@
+[
+  {
+    "id": 3,
+    "name": "Loving Vegan Restaurant",
+    "address": "61 Lê Quang Đạo, Mỹ An, Ngũ Hành Sơn, Đà Nẵng",
+    "lat": "16.05596425925097",
+    "lng": "108.2446727610588",
+    "alias": "loving-vegan-restaurant",
+    "photo": "public/thumbs/90x90x1/100_292271673-457135429745746-4888325337037421140-n-WIl8gD4DCj.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Nhà hàng chay Shangha",
+    "address": "84 Hoàng Văn Thụ, Phước Ninh, Hải Châu, Đà Nẵng",
+    "lat": "16.063181873792402",
+    "lng": "108.22017402180292",
+    "alias": "nha-hang-chay-shangha",
+    "photo": "public/thumbs/90x90x1/100_414124842-987045732819962-11586253091453403-n-Tk2fw5lJeL.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Nhà hàng chay Ans",
+    "address": "169F Trưng Nữ Vương, Bình Thuận, Hải Châu, Đà Nẵng",
+    "lat": "16.05655146444993",
+    "lng": "108.22075305415048",
+    "alias": "nha-hang-chay-ans",
+    "photo": "public/thumbs/90x90x1/100_448904383-1005944694873929-7196403311442004088-n-6A0HsuWHQx.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Quán Chay Thúy",
+    "address": "122 Hoàng Diệu, Hải Châu 2, Hải Châu, Đà Nẵng",
+    "lat": "16.064170842204817",
+    "lng": "108.21823553714671",
+    "alias": "quan-chay-thuy",
+    "photo": "public/thumbs/90x90x1/100_305404561-593161462513295-271451109099892939-n-AE1oqlvjla.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Quán Chay Thiện Duyên",
+    "address": "Kiệt 308/8 Hoàng Diệu, Bình Hiên, Hải Châu, Đà Nẵng",
+    "lat": "16.058618885092212",
+    "lng": "108.21658772802547",
+    "alias": "quan-chay-thien-duyen",
+    "photo": "public/thumbs/90x90x1/100_vn-11134513-7r98o-lsv5jkrgdjnoe3-at-resize-ss640x400-at-crop-w640-h400-ct-EWf5gvnEWs.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Chay Trí Ngộ",
+    "address": "375 Ông Ích Khiêm, Hải Châu 2, Hải Châu, Đà Nẵng",
+    "lat": "16.06438208811123",
+    "lng": "108.21526893966738",
+    "alias": "chay-tri-ngo",
+    "photo": "public/thumbs/90x90x1/100_409725785-122117069708105870-5491719763325121282-n-4anZInNf5E.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Quán chay Thiên Ân",
+    "address": "281a Trần Cao Vân, Xuân Hà, Thanh Khê, Đà Nẵng",
+    "lat": "16.071262169989144",
+    "lng": "108.19920188384783",
+    "alias": "quan-chay-thien-an",
+    "photo": "public/thumbs/90x90x1/100_455950078-914927190654396-4263431923443999259-n-rEyMO3vLfR.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Ẩm thực chay Đà Nẵng",
+    "address": "35/1 Hàm Nghi, Thanh Khê, Đà Nẵng",
+    "lat": "16.06657101557174",
+    "lng": "108.21045635517302",
+    "alias": "am-thuc-chay-da-nang",
+    "photo": "public/thumbs/90x90x1/100_458767749-1031230645677664-4510995949793567744-n-P2Ml0y7mVz.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Chay An Lạc Tâm - Hoàng Thị Loan",
+    "address": "Lô 45 Hoàng Thị Loan, Hòa Minh, Liên Chiểu, Đà Nẵng",
+    "lat": "16.07564174176813",
+    "lng": "108.16973153965189",
+    "alias": "chay-an-lac-tam-hoang-thi-loan",
+    "photo": "public/thumbs/90x90x1/100_302114040-445429977566550-8142055035699278460-n-mX4IayirDZ.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Chay An Lạc Tâm - Lê Quý Đôn",
+    "address": "41 Lê Quý Đôn, Bình Thuận, Hải Châu, Đà Nẵng",
+    "lat": "16.06376506688103",
+    "lng": "108.22191659744634",
+    "alias": "chay-an-lac-tam-le-quy-don",
+    "photo": "public/thumbs/90x90x1/100_302114040-445429977566550-8142055035699278460-n-wdXY7bFdap.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Chay An Lạc Tâm - Phan Đăng Lưu",
+    "address": "117 Phan Đăng Lưu, Hoà Cường Nam, Hải Châu, Đà Nẵng",
+    "lat": "16.043969033541483",
+    "lng": "108.21848336995986",
+    "alias": "chay-an-lac-tam-phan-dang-luu",
+    "photo": "public/thumbs/90x90x1/100_302114040-445429977566550-8142055035699278460-n-pR4WcYBh2r.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Nhà hàng Ngon Thị Hoa",
+    "address": "100 Lê Quang Đạo, Ngũ Hành Sơn, Đà Nẵng",
+    "lat": "16.04915933035905",
+    "lng": "108.24579253714629",
+    "alias": "nha-hang-ngon-thi-hoa",
+    "photo": "public/thumbs/90x90x1/100_309048911-781744369817158-8003634717618364337-n-GAGlKttJrz.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Bếp chay Như Nhiên",
+    "address": "191 Nguyễn Tri Phương, Thanh Khê, Đà Nẵng",
+    "lat": "16.054872302770036",
+    "lng": "108.20972499466195",
+    "alias": "bep-chay-nhu-nhien",
+    "photo": "public/thumbs/90x90x1/100_372625606-795409002589006-6761303357177450173-n-ChgGSXHGSp.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Nhà Hàng Tài Ký - Điện Biên Phủ",
+    "address": "478 A2 Điện Biên Phủ, Thanh Khê, Đà Nẵng",
+    "lat": "16.066147319917565",
+    "lng": "108.18681075397699",
+    "alias": "nha-hang-tai-ky-dien-bien-phu",
+    "photo": "public/thumbs/90x90x1/100_436200417-965324455595684-5637017019726564073-n-A9LLdPbykH.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Nhà hàng Chay Ngọc Chi",
+    "address": "202 Hoàng Diệu, Nam Dương, Hải Châu, Đà Nẵng",
+    "lat": "16.06207922032137",
+    "lng": "108.21747545582473",
+    "alias": "nha-hang-chay-ngoc-chi",
+    "photo": "public/thumbs/90x90x1/100_449853137-876467871166112-3098688091380074814-n-oYxoDdyeEI.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Nhà hàng chay Maha Vegetariano",
+    "address": "2 Nguyễn Xuân Khoát, An Hải, Sơn Trà, Đà Nẵng",
+    "lat": "16.069982143989662",
+    "lng": "108.23762446767698",
+    "alias": "nha-hang-chay-maha-vegetariano",
+    "photo": "public/thumbs/90x90x1/100_356631542-115286651604268-3922489087565175440-n-RH9OoV2WAP.webp",
+    "description": "",
+    "openTime": "",
+    "closeTime": "",
+    "tags": [
+      "an-chay",
+      "an-sang",
+      "an-trua",
+      "an-toi"
+    ]
+  }
+]
