@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Bếp bà Trang",
+    "address": "K356 H73/12 Hoàng Diệu, Đà Nẵng",
+    "lat": 16.056330,
+    "lng": 108.214596,
+    "description": "Quán ăn vặt ngon, giá rẻ, phục vụ nhanh chóng. Món ăn đa dạng từ bánh tráng, bún thịt nướng đến chè.",
+    "image": "https://picsum.photos/200/300",
+    "openTime": "8:00",
+    "closeTime": "22:00",
+    "tags": ["an-toi", "com"]
+  }
+]
