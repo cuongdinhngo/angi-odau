@@ -30,8 +30,7 @@
         icon="mdi-map-marker-radius-outline"
       ></v-btn>
       <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>mdi-account</v-icon>
+      <v-btn icon="mdi-account-circle-outline">
       </v-btn>
     </v-app-bar>
 
