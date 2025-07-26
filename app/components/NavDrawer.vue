@@ -7,7 +7,7 @@
     <v-list-item link class="px-2 text-center">
       <template #title>
         <v-img
-          :src="iconPath('truck_food_delivery.svg')"
+          :src="iconPath('kiosk_trolley.svg')"
           width="40"
           height="40"
           cover
