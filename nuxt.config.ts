@@ -3,14 +3,21 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   ssr: false,
-  modules: ['@nuxtjs/leaflet', 'vuetify-nuxt-module'],
+  modules: ['@nuxtjs/leaflet', 'vuetify-nuxt-module', '@nuxtjs/supabase'],
   runtimeConfig: {
     public: {
       googleMapsApiKey: process.env.VITE_GOOGLE_MAPS_API_KEY,
       googleMapsId: process.env.VITE_GOOGLE_MAPS_ID,
       ipInfoToken: process.env.VITE_IP_INFO_TOKEN,
-      supabaseUrl: process.env.SUPABASE_URL,
-      supabaseAnonKey: process.env.SUPABASE_ANON_KEY,
     },
+  },
+  supabase: {
+    url: process.env.SUPABASE_URL,
+    key: process.env.SUPABASE_KEY,
+    redirectOptions: {
+      login: '/login',
+      callback: '/login',
+      exclude: ['/'],
+    }
   },
 })
