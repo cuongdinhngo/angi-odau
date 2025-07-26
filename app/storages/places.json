@@ -7011,56 +7011,6 @@
   },
   {
     "id": 447,
-    "name": "Siêu Thị Đặc Sản Quà Miền Trung",
-    "address": "181 Võ Văn Kiệt, An Hải Bắc, Sơn Trà, Đà Nẵng",
-    "lat": "16.061785625355828",
-    "lng": "108.2368838945939",
-    "alias": "sieu-thi-dac-san-qua-mien-trung",
-    "photo": "public/thumbs/90x90x1/100_439780317-844487864385995-3026774296797953206-n-VDbhTBcCSU.webp",
-    "description": "",
-    "openTime": "",
-    "closeTime": "",
-    "tags": [
-      "an-trua",
-      "an-toi"
-    ]
-  },
-  {
-    "id": 448,
-    "name": "Siêu thị đặc sản miền Trung 24H",
-    "address": "Lô B4 1-10 An Cư 4, Phước Mỹ, Sơn Trà, Đà Nẵng",
-    "lat": "16.080314511354544",
-    "lng": "108.2451005218034",
-    "alias": "sieu-thi-dac-san-mien-trung-24h",
-    "photo": "public/thumbs/90x90x1/100_305654739-506760434789135-4981272685292528199-n-2TjOJxSaZX.webp",
-    "description": "",
-    "openTime": "",
-    "closeTime": "",
-    "tags": [
-      "an-trua",
-      "an-toi"
-    ]
-  },
-  {
-    "id": 449,
-    "name": "Nước mắm Vân Tranh",
-    "address": "60 Chính Hữu, An Hải Bắc, Sơn Trà, Đà Nẵng",
-    "lat": "16.07282471160541",
-    "lng": "108.23945575249036",
-    "alias": "nuoc-mam-van-tranh",
-    "photo": "public/thumbs/90x90x1/100_logo-NRR7gB6DiX.webp",
-    "description": "",
-    "openTime": "",
-    "closeTime": "",
-    "tags": [
-      "di-cafe",
-      "an-trua",
-      "an-toi",
-      "an-nhau"
-    ]
-  },
-  {
-    "id": 450,
     "name": "Trung tâm thương mại Vincom Plaza Ngô Quyền",
     "address": "910A Ngô Quyền, An Hải, Sơn Trà, Đà Nẵng",
     "lat": "16.071744579738358",
@@ -7076,7 +7026,7 @@
     ]
   },
   {
-    "id": 451,
+    "id": 448,
     "name": "Siêu thị K-Mark",
     "address": "Lô 03 Phạm Văn Đồng, An Hải Bắc, Sơn Trà, Đà Nẵng",
     "lat": "16.071224361667344",
@@ -7089,7 +7039,7 @@
     "tags": []
   },
   {
-    "id": 452,
+    "id": 449,
     "name": "Coopmart Sơn Trà",
     "address": "Bình Than, Nại Hiên Đông, Sơn Trà, Đà Nẵng",
     "lat": "16.09439425135355",
@@ -7104,7 +7054,7 @@
     ]
   },
   {
-    "id": 453,
+    "id": 450,
     "name": "Coopmart Đà Nẵng",
     "address": "478 Điện Biên Phủ, Thanh Khê Đông, Thanh Khê, Đà Nẵng",
     "lat": "16.06676697536019",
@@ -7117,7 +7067,7 @@
     "tags": []
   },
   {
-    "id": 454,
+    "id": 451,
     "name": "Chợ đêm Sơn Trà",
     "address": "Mai Hắc Đế, An Hải Trung, Sơn Trà, Đà Nẵng",
     "lat": "16.061814295206176",
@@ -7133,7 +7083,7 @@
     ]
   },
   {
-    "id": 455,
+    "id": 452,
     "name": "Phố Yaourt Bằng Lăng",
     "address": "Dưới chân cầu Trần Thị Lý, An Hải Tây, Sơn Trà, Đà Nẵng",
     "lat": "16.045129714254386",
@@ -7151,7 +7101,7 @@
     ]
   },
   {
-    "id": 456,
+    "id": 453,
     "name": "Bún Chả Quyên 's House",
     "address": "14 Lý Văn Tố, An Hải Bắc, Sơn Trà, Đà Nẵng",
     "lat": "16.067938870889517",
@@ -7168,7 +7118,7 @@
     ]
   },
   {
-    "id": 457,
+    "id": 454,
     "name": "Sơn Trà Marina",
     "address": "Hồ Xanh, Thọ Quang, Sơn Trà, Đà Nẵng",
     "lat": "16.097048322986648",
@@ -7183,7 +7133,7 @@
     ]
   },
   {
-    "id": 458,
+    "id": 455,
     "name": "Nhà hàng chay Maha Vegetariano",
     "address": "2 Nguyễn Xuân Khoát, An Hải, Sơn Trà, Đà Nẵng",
     "lat": "16.069982143989662",
@@ -7196,12 +7146,11 @@
     "tags": [
       "an-trua",
       "an-toi",
-      "an-chay",
-      "an-nhau"
+      "an-chay"
     ]
   },
   {
-    "id": 459,
+    "id": 456,
     "name": "East West Brewing -  Craft Beer Da Nang",
     "address": "1A Võ Nguyên Giáp, An Hải, Đà Nẵng",
     "lat": "16.06784958588033",
