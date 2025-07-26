@@ -4,6 +4,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   modules: ['@nuxtjs/leaflet', 'vuetify-nuxt-module', '@nuxtjs/supabase'],
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/icons/kiosk_trolley.svg' }
+      ]
+    }
+  },
   runtimeConfig: {
     public: {
       googleMapsApiKey: process.env.VITE_GOOGLE_MAPS_API_KEY,
@@ -20,4 +27,7 @@ export default defineNuxtConfig({
       exclude: ['/'],
     }
   },
+  vuetify: {
+    vuetifyOptions: 'vuetify.config.ts'
+  }
 })
