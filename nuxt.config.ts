@@ -9,6 +9,8 @@ export default defineNuxtConfig({
       googleMapsApiKey: process.env.VITE_GOOGLE_MAPS_API_KEY,
       googleMapsId: process.env.VITE_GOOGLE_MAPS_ID,
       ipInfoToken: process.env.VITE_IP_INFO_TOKEN,
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseAnonKey: process.env.SUPABASE_ANON_KEY,
     },
   },
 })
