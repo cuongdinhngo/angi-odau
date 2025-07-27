@@ -129,6 +129,29 @@ export type Database = {
         Args: { "": unknown }
         Returns: number
       }
+      search_food_places: {
+        Args: {
+          user_lat?: number
+          user_lng?: number
+          radius?: number
+          tags_filter?: Json
+          text_query?: string
+        }
+        Returns: {
+          address: string
+          alias: string | null
+          close_time: string | null
+          created_at: string
+          description: string | null
+          id: number
+          lat: number | null
+          lng: number | null
+          name: string
+          open_time: string | null
+          photo: string | null
+          tags: Json[] | null
+        }[]
+      }
       sec_to_gc: {
         Args: { "": number }
         Returns: number
