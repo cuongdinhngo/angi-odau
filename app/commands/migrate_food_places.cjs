@@ -11,7 +11,7 @@ const SUPABASE_SERVICE_KEY = process.env.SUPABASE_KEY;
 const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY);
 const tableName = 'food_places';
 
-const filePath = path.join(__dirname, './storages/places.json');
+const filePath = path.join(__dirname, '../storages/places.json');
 
 const rawData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 const data = rawData.map(({ openTime, closeTime, ...rest }) => ({
@@ -21,11 +21,11 @@ const data = rawData.map(({ openTime, closeTime, ...rest }) => ({
 }));
 
 async function migrate() {
-  const { error, count } = await supabase.from(tableName).insert(data, { count: 'exact' });
+  const { error, count } = await supabase.from(tableName).upsert(data, { count: 'exact' });
   if (error) {
-    console.error('Bulk insert error:', error);
+    console.error('Bulk upsert error:', error);
   } else {
-    console.log(`Total is ${data.length}, Bulk inserted ${count} items into ${tableName}.`);
+    console.log(`Total is ${data.length}, Bulk upserted ${count} items into ${tableName}.`);
   }
   console.log('Migration complete.');
 }
