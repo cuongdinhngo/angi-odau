@@ -28,7 +28,7 @@
         :key="item.value"
         link
         class="pa-2 text-center"
-        @click="searchQuery.tags = [item.value]"
+        @click="handleSearchQuery(item.value)"
         :value="item.value"
         color="primary"
       >
@@ -60,6 +60,13 @@ const navMenu = defineModel(
     default: false,
   }
 );
+
+function handleSearchQuery(value: string) {
+  searchQuery.value.tags = [value];
+  searchQuery.value.isWishlist = false;
+  searchQuery.value.isFavorite = false;
+  navMenu.value = false;
+}
 
 const menu = [
   {
