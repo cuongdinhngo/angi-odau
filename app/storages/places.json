@@ -93,7 +93,6 @@
     "openTime": "",
     "closeTime": "",
     "tags": [
-      "di-cafe",
       "an-trua",
       "an-toi",
       "an-sang",
@@ -112,7 +111,6 @@
     "openTime": "",
     "closeTime": "",
     "tags": [
-      "di-cafe",
       "an-trua",
       "an-toi",
       "an-sang",
@@ -131,7 +129,6 @@
     "openTime": "",
     "closeTime": "",
     "tags": [
-      "di-cafe",
       "an-trua",
       "an-toi",
       "an-sang",
@@ -164,7 +161,6 @@
     "openTime": "",
     "closeTime": "",
     "tags": [
-      "di-cafe",
       "an-trua",
       "an-toi",
       "an-sang"
@@ -337,7 +333,6 @@
     "openTime": "",
     "closeTime": "",
     "tags": [
-      "di-cafe",
       "an-trua",
       "an-toi",
       "an-sang"
@@ -2662,7 +2657,6 @@
     "openTime": "",
     "closeTime": "",
     "tags": [
-      "di-cafe",
       "an-vat"
     ]
   },
@@ -2678,7 +2672,6 @@
     "openTime": "",
     "closeTime": "",
     "tags": [
-      "di-cafe",
       "an-vat"
     ]
   },
@@ -3774,7 +3767,6 @@
     "openTime": "",
     "closeTime": "",
     "tags": [
-      "di-cafe",
       "an-trua",
       "an-toi",
       "an-sang",
@@ -4384,7 +4376,6 @@
     "openTime": "",
     "closeTime": "",
     "tags": [
-      "di-cafe",
       "an-trua",
       "an-toi",
       "an-sang",
@@ -5084,7 +5075,6 @@
     "openTime": "",
     "closeTime": "",
     "tags": [
-      "di-cafe",
       "an-trua",
       "an-toi",
       "an-sang"
@@ -5969,8 +5959,7 @@
     "tags": [
       "an-trua",
       "an-toi",
-      "an-sang",
-      "di-cafe"
+      "an-sang"
     ]
   },
   {
@@ -6021,8 +6010,7 @@
     "tags": [
       "an-trua",
       "an-toi",
-      "an-sang",
-      "di-cafe"
+      "an-sang"
     ]
   },
   {
