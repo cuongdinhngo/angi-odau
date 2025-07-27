@@ -27,7 +27,7 @@ export type Database = {
           name: string
           open_time: string | null
           photo: string | null
-          tags: Json[] | null
+          tags: string[] | null
         }
         Insert: {
           address: string
@@ -41,7 +41,7 @@ export type Database = {
           name: string
           open_time?: string | null
           photo?: string | null
-          tags?: Json[] | null
+          tags?: string[] | null
         }
         Update: {
           address?: string
@@ -55,9 +55,69 @@ export type Database = {
           name?: string
           open_time?: string | null
           photo?: string | null
-          tags?: Json[] | null
+          tags?: string[] | null
         }
         Relationships: []
+      }
+      users: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          name: string
+          phone: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+          phone?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+          phone?: string | null
+        }
+        Relationships: []
+      }
+      wishlist: {
+        Row: {
+          created_at: string
+          id: number
+          place_id: number
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: number
+          place_id: number
+          user_id?: string
+        }
+        Update: {
+          created_at?: string
+          id?: number
+          place_id?: number
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "wishlist_place_id_fkey"
+            columns: ["place_id"]
+            isOneToOne: false
+            referencedRelation: "food_places"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "wishlist_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          },
+        ]
       }
     }
     Views: {
@@ -114,12 +174,29 @@ export type Database = {
           name: string
           open_time: string | null
           photo: string | null
-          tags: Json[] | null
+          tags: string[] | null
         }[]
       }
       gc_to_sec: {
         Args: { "": number }
         Returns: number
+      }
+      get_wishlist_places: {
+        Args: { user_uuid: string }
+        Returns: {
+          address: string
+          alias: string | null
+          close_time: string | null
+          created_at: string
+          description: string | null
+          id: number
+          lat: number | null
+          lng: number | null
+          name: string
+          open_time: string | null
+          photo: string | null
+          tags: string[] | null
+        }[]
       }
       latitude: {
         Args: { "": unknown }
@@ -134,7 +211,7 @@ export type Database = {
           user_lat?: number
           user_lng?: number
           radius?: number
-          tags_filter?: Json
+          tags_filter?: string[]
           text_query?: string
         }
         Returns: {
@@ -149,7 +226,7 @@ export type Database = {
           name: string
           open_time: string | null
           photo: string | null
-          tags: Json[] | null
+          tags: string[] | null
         }[]
       }
       sec_to_gc: {
