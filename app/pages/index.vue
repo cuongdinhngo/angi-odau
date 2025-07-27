@@ -33,11 +33,19 @@
                   cover
                 ></v-img>
                 <v-card-title class="text-subtitle-1 font-weight-bold pb-0">{{ place.name }}</v-card-title>
-                <v-card-text class="my-1 text-subtitle-2">
+                <v-card-text class="pa-0 text-subtitle-2">
                   <p v-if="place.address" class="py-1 ma-0">{{ place.address }}</p>
                   <p v-if="place.description" class="py-1 ma-0">{{ place.description }}</p>
                   <p v-if="place.distance" class="py-1 ma-0">Distance: <span class="font-weight-bold">{{ place.distance ? place.distance.toFixed(2) : 'N/A' }} m</span></p>
                 </v-card-text>
+                <v-card-actions class="pa-0 d-flex justify-center ga-4">
+                  <v-btn icon @click="handleWishlist(place)">
+                    <v-icon color="red" :icon="place.isWishlist ? 'mdi-star' : 'mdi-star-outline'" />
+                  </v-btn>
+                  <v-btn icon>
+                    <v-icon color="red" :icon="place.isFavorite ? 'mdi-heart' : 'mdi-heart-outline'" />
+                  </v-btn>
+                </v-card-actions>
               </v-card>
             </LPopup>
           </LMarker>
@@ -57,16 +65,16 @@ import type { Tables } from '@/types/database.types';
 import type { Location } from '@/types/Map';
 
 const { currentLocation, getCurrentLocation, getDistance } = useLocations();
+const { loadWishlist, insert:addToWishlist, removeFromWishlist } = useWishlist();
 
 const supabase = useSupabaseClient();
 const searchQuery = useSearchQuery();
-
 const mapCenter = ref<[number, number]>([0, 0]);
 const route = useRoute();
 const router = useRouter();
-console.log('Route query:', route);
+const authenticatedUser = useSupabaseUser();
 
-type FoodPlaceWithDistance = Tables<'food_places'> & { distance?: number };
+type FoodPlaceWithDistance = Tables<'food_places'> & { distance?: number, isWishlist?: boolean, isFavorite?: boolean };
 const wantedPlaces = ref<FoodPlaceWithDistance[]>([]);
 
 // Custom icon for user location
@@ -83,6 +91,30 @@ const { status } = useAsyncData(async () => {
   // Set map center to user's current location
   mapCenter.value = [currentLocation.lat, currentLocation.lng];
 });
+
+async function handleWishlist(place: FoodPlaceWithDistance) {
+  if (!authenticatedUser.value) {
+    // Redirect to login if user is not authenticated
+    navigateTo({ name: 'login' });
+    return;
+  }
+
+  if (place.isWishlist) {
+    // Remove from wishlist
+    await removeFromWishlist(
+      place.id,
+      authenticatedUser.value.id
+    );
+    place.isWishlist = false;
+  } else {
+    // Add to wishlist
+    await addToWishlist({
+      user_id: authenticatedUser.value.id,
+      place_id: place.id,
+    });
+    place.isWishlist = true;
+  }
+}
 
 watch(
   () => searchQuery,
@@ -118,7 +150,6 @@ watch(
     }
 
     if (filters.radius || filters.tags_filter || filters.text_query) {
-      
       console.log('Fetching places with filters:', JSON.stringify(filters));
       const { data, error } = await supabase.rpc('search_food_places', filters);
       if (error) {
@@ -135,6 +166,20 @@ watch(
         });
         console.log('Fetched places:', wantedPlaces.value);
       }
+    }
+
+    if (newSearchQueries.value.isWishlist && authenticatedUser.value?.id) {
+      const { data: wishlist, error } = await loadWishlist(authenticatedUser.value.id);
+      if (error) {
+        console.error('Error loading wishlist:', error);
+      } else {
+        wantedPlaces.value = wishlist.map(place => ({
+          ...place,
+          distance: getDistance(currentLocation, { lat: place.lat, lng: place.lng }),
+          isWishlist: true,
+        }));
+      }
+
     }
   },
   { immediate: true, deep: true }
