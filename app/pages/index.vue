@@ -21,6 +21,7 @@
             :key="idx"
             :lat-lng="[place?.lat, place?.lng]"
           >
+            <LTooltip>{{ place.name }}</LTooltip>
             <LPopup>
               <v-card class="pa-0 rounded-lg text-center elevation-0 bg-transparent">
                 <v-img
@@ -35,7 +36,7 @@
                 <v-card-text class="my-1 text-subtitle-2">
                   <p v-if="place.address" class="py-1 ma-0">{{ place.address }}</p>
                   <p v-if="place.description" class="py-1 ma-0">{{ place.description }}</p>
-                  <p v-if="place.distance" class="py-1 ma-0">Distance: <span class="font-weight-bold">{{ place.distance ? place.distance.toFixed(2) : 'N/A' }} km</span></p>
+                  <p v-if="place.distance" class="py-1 ma-0">Distance: <span class="font-weight-bold">{{ place.distance ? place.distance.toFixed(2) : 'N/A' }} m</span></p>
                 </v-card-text>
               </v-card>
             </LPopup>
@@ -59,7 +60,11 @@ const { currentLocation, getCurrentLocation, getDistance } = useLocations();
 
 const supabase = useSupabaseClient();
 const searchQuery = useSearchQuery();
+
 const mapCenter = ref<[number, number]>([0, 0]);
+const route = useRoute();
+const router = useRouter();
+console.log('Route query:', route);
 
 type FoodPlaceWithDistance = Tables<'food_places'> & { distance?: number };
 const wantedPlaces = ref<FoodPlaceWithDistance[]>([]);
@@ -83,12 +88,39 @@ watch(
   () => searchQuery,
   async (newSearchQueries) => {
     console.log('Search query changed:', newSearchQueries.value);
+    let filters: {
+      user_lat?: number,
+      user_lng?: number,
+      radius?: number,
+      tags_filter?: any[],
+      text_query?: string,
+    } = {};
+
+
+    // Build new query object based on search values
+    const newQuery: Record<string, string> = {};
     if (newSearchQueries.value.distance) {
-      const { data, error } = await supabase.rpc('food_places_within_distance', {
-        user_lat: currentLocation.lat,
-        user_lng: currentLocation.lng,
-        radius: newSearchQueries.value.distance,
-      });
+      filters.user_lat = currentLocation.lat;
+      filters.user_lng = currentLocation.lng;
+      filters.radius = newSearchQueries.value.distance;
+      newQuery.distance = String(newSearchQueries.value.distance);
+    }
+    if (newSearchQueries.value.tags && newSearchQueries.value.tags.length > 0) {
+      filters.tags_filter = newSearchQueries.value.tags;
+      newQuery.tags = newSearchQueries.value.tags.join(',');
+    }
+
+    // Only update if query actually changed
+    const currentQuery = { ...route.query };
+    const queriesAreDifferent = JSON.stringify(currentQuery) !== JSON.stringify(newQuery);
+    if (queriesAreDifferent) {
+      router.replace({ query: newQuery });
+    }
+
+    if (filters.radius || filters.tags_filter || filters.text_query) {
+      
+      console.log('Fetching places with filters:', JSON.stringify(filters));
+      const { data, error } = await supabase.rpc('search_food_places', filters);
       if (error) {
         console.error('Error fetching places:', error);
         wantedPlaces.value = [];

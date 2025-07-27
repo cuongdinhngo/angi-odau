@@ -28,6 +28,9 @@
         :key="item.value"
         link
         class="pa-2 text-center"
+        @click="searchQuery.tags = [item.value]"
+        :value="item.value"
+        color="primary"
       >
         <template #title>
           <v-img
@@ -48,6 +51,7 @@
 </template>
 <script setup lang="ts">
 const { mdAndDown } = useDisplay();
+const searchQuery = useSearchQuery();
 
 const navMenu = defineModel(
   'navMenu',
@@ -74,9 +78,9 @@ const menu = [
     icon: 'an_toi.svg',
   },
   {
-    label: 'Ăn Khuya',
-    value: 'an-khuya',
-    icon: 'an_khuya.svg',
+    label: 'Đi Cafe',
+    value: 'di-cafe',
+    icon: 'soft_drink_juice.svg',
   },
   {
     label: 'Ăn Vặt',

@@ -27,14 +27,14 @@
         flat
       />
 
-      <v-btn
-        icon="mdi-tune"
-      ></v-btn>
-
       <!-- Distance filter -->
       <v-btn icon>
         <v-icon icon="mdi-map-marker-radius-outline" size="large"/>
-        <v-menu activator="parent" :close-on-content-click="false">
+        <v-menu
+          activator="parent"
+          :close-on-content-click="false"
+          
+        >
           <v-card width="300" class="py-2">
             <v-card-title class="text-subtitle-1 font">Filter by Distance</v-card-title>
             <v-card-text class="">
@@ -79,7 +79,7 @@ const { mdAndDown } = useDisplay();
 const searchQuery = useSearchQuery();
 const { currentLocation, getCurrentLocation } = useLocations();
 
-const navMenu = ref(false);
+const navMenu = ref(true);
 const distance = ref(0);
 
 const distanceLabels = {
