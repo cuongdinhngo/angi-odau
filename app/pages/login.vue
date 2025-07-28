@@ -46,7 +46,7 @@
         type="submit"
         variant="flat"
         color="primary"
-        :loading="false"
+        :loading="loading"
         prepend-icon="mdi-login"
       >
         Login
@@ -61,6 +61,23 @@
       </v-btn>
     </v-card-actions>
   </v-card>
+  <v-snackbar
+    v-model="snackbar.visible"
+    :timeout="snackbar.timeout"
+    :color="snackbar.color"
+  >
+    <span class="text-h6">{{ snackbar.message }}</span>
+
+    <template v-slot:actions>
+      <v-btn
+        color="white"
+        variant="elevated"
+        @click="snackbar.visible = false"
+      >
+        Close
+      </v-btn>
+    </template>
+  </v-snackbar>
 </template>
 <script setup lang="ts">
 definePageMeta({
@@ -70,6 +87,7 @@ definePageMeta({
 import { useField, useForm } from 'vee-validate';
 
 const { mdAndDown } = useDisplay();
+const loading = ref(false);
 
 const { handleSubmit, handleReset } = useForm({
   validationSchema: {
@@ -89,9 +107,35 @@ const { handleSubmit, handleReset } = useForm({
 const password = useField('password');
 const email = useField('email');
 const showPassword = ref(false);
+const snackbar = reactive({
+  visible: false,
+  message: '',
+  timeout: 5000,
+  color: 'green',
+});
 
-const submit = handleSubmit(values => {
+const submit = handleSubmit(async values => {
   console.log('Form submitted:', values);
-  alert(JSON.stringify(values, null, 2))
+  loading.value = true;
+  const { data, error } = await useSupabaseClient().auth.signInWithPassword({
+    email: values.email,
+    password: values.password,
+  });
+  if (error) {
+    console.error('Login error:', error);
+    snackbar.visible = true;
+    snackbar.color = 'red';
+    snackbar.message = 'Something went wrong. Please try again.';
+    setTimeout(() => {
+      snackbar.visible = false;
+      loading.value = false;
+    }, snackbar.timeout);
+  } else {
+    snackbar.visible = true;
+    snackbar.message = 'Welcome back!';
+    setTimeout(() => {
+      navigateTo({ name: 'index' });
+    }, 1500);
+  }
 })
 </script>
