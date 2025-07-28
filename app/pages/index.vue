@@ -5,6 +5,8 @@
         cols="12"
         class="pa-0"
       >
+
+        <!-- Leaflet map component -->
         <LMap
           v-if="status === 'success' && currentLocation.lat && currentLocation.lng"
           style="width: 100%; min-height: 100vh;"
@@ -12,9 +14,13 @@
           :center="mapCenter"
           :use-global-leaflet="false"
         >
+
+          <!-- OpenStreetMap tile layer -->
           <LTileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
+
+          <!-- Markers for wanted places -->
           <LMarker
             v-if="wantedPlaces.length"
             v-for="(place, idx) in wantedPlaces"
@@ -23,6 +29,7 @@
             :ref="el => setMarkerRef(place.id, el)"
           >
             <LTooltip>{{ place.name }}</LTooltip>
+
             <LPopup ref="popupRefs">
               <v-card class="pa-0 rounded-lg text-center elevation-0 bg-transparent">
                 <v-img
@@ -50,10 +57,18 @@
               </v-card>
             </LPopup>
           </LMarker>
+
           <!-- User's current location marker -->
           <LMarker :lat-lng="[currentLocation.lat, currentLocation.lng]" :icon="userIcon">
             <LTooltip>You are here</LTooltip>
           </LMarker>
+
+          <!-- Circle around user's location based on search distance -->
+          <LCircle
+            v-if="searchQuery.distance && currentLocation.lat && currentLocation.lng"
+            :lat-lng="[currentLocation.lat, currentLocation.lng]"
+            :radius="searchQuery.distance"
+          />
         </LMap>
       </v-col>
     </v-row>
@@ -268,6 +283,9 @@ watch(
 
     // Update sliders visibility based on wanted places
     sliders.visible = wantedPlaces.value.length > 0;
+
+    // Map center to your current location
+    mapCenter.value = [currentLocation.lat, currentLocation.lng];
 
     console.log('Updated wanted places:', wantedPlaces.value.length);
   },
