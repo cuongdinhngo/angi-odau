@@ -28,39 +28,43 @@
       />
 
       <!-- Distance filter -->
-      <v-btn icon>
-        <v-icon icon="mdi-map-marker-radius-outline" size="large"/>
-        <v-menu
-          activator="parent"
-          :close-on-content-click="false"
-        >
-          <v-card width="300" class="py-2">
-            <v-card-title class="text-subtitle-1 font">Filter by Distance</v-card-title>
-            <v-card-text class="">
-              <v-slider
-                v-model="distance"
-                :max="3"
-                :ticks="distanceLabels"
-                show-ticks="always"
-                step="1"
-                tick-size="4"
-              ></v-slider>
-            </v-card-text>
-            <v-card-actions>
-              <v-btn
-                variant="flat"
-                color="primary"
-                @click="getUserDistance"
-              >Apply</v-btn>
-              <v-btn
-                variant="tonal"
-                color="primary"
-                @click="$emit('close')"
-              >Close</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-menu>
-      </v-btn>
+      <v-menu
+        v-model="filterMenu"
+        :close-on-content-click="false"
+      >
+        <template #activator="{ props }">
+          <v-btn icon v-bind="props">
+            <v-icon icon="mdi-map-marker-radius-outline" size="large"/>
+          </v-btn>
+        </template>
+        <v-card width="300" class="py-2">
+          <v-card-title class="text-subtitle-1 font">Filter by Distance</v-card-title>
+
+          <v-card-text class="">
+            <v-slider
+              v-model="distance"
+              :max="3"
+              :ticks="distanceLabels"
+              show-ticks="always"
+              step="1"
+              tick-size="4"
+            ></v-slider>
+          </v-card-text>
+
+          <v-card-actions>
+            <v-btn
+              variant="flat"
+              color="primary"
+              @click="getUserDistance(); filterMenu = false;"
+            >Apply</v-btn>
+            <v-btn
+              variant="tonal"
+              color="primary"
+              @click="filterMenu = false"
+            >Close</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-menu>
 
       <v-spacer></v-spacer>
 
@@ -164,6 +168,7 @@ const { user, get:getUserInfo } = useUsers();
 const navMenu = ref(true);
 const distance = ref(0);
 const authenticatedUser = useSupabaseUser();
+const filterMenu = ref(false);
 
 const secretDialog = ref(false);
 provide('secretDialog', secretDialog);
