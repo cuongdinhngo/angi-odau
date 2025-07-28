@@ -52,6 +52,7 @@
 <script setup lang="ts">
 const { mdAndDown } = useDisplay();
 const searchQuery = useSearchQuery();
+const route = useRoute();
 
 const navMenu = defineModel(
   'navMenu',
@@ -66,6 +67,9 @@ function handleSearchQuery(value: string) {
   searchQuery.value.isWishlist = false;
   searchQuery.value.isFavorite = false;
   navMenu.value = false;
+  if (route.name !== 'index') {
+    navigateTo({ name: 'index', query: { ...route.query, tags: value } });
+  }
 }
 
 const menu = [

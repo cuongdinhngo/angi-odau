@@ -17,6 +17,7 @@
 
       <!-- Search field -->
       <v-text-field
+        v-model="searchText"
         append-inner-icon="mdi-magnify"
         label="Search"
         single-line
@@ -25,6 +26,8 @@
         density="compact"
         rounded="pill"
         flat
+        @keyup.enter="handleSearchText"
+        @click:append-inner="handleSearchText"
       />
 
       <!-- Distance filter -->
@@ -134,7 +137,7 @@
               <v-list-item
                 prepend-icon="mdi-map-marker-plus"
                 title="Add new place"
-                @click="navigateTo('/profile')"
+                @click="navigateTo({ name: 'new-place' })"
               >
                 <template #prepend>
                   <v-icon color="blue" icon="mdi-map-marker-plus" />
@@ -163,13 +166,14 @@ import { resetSearchQuery } from '@/composables/useSearchQuery';
 const { mdAndDown } = useDisplay();
 const searchQuery = useSearchQuery();
 const { currentLocation, getCurrentLocation } = useLocations();
-const { user, get:getUserInfo } = useUsers();
+const { user, loadUserFromLocalStorage } = useUsers();
 
 const navMenu = ref(true);
 const distance = ref(0);
 const authenticatedUser = useSupabaseUser();
 const filterMenu = ref(false);
-
+const searchText = ref('');
+const route = useRoute();
 const secretDialog = ref(false);
 provide('secretDialog', secretDialog);
 
@@ -194,15 +198,18 @@ onMounted(async () => {
     console.warn('Current location not available');
   }
   if (authenticatedUser) {
-    const { data, error } = await getUserInfo(authenticatedUser.value.id);
-    if (error) {
-      console.error('Error fetching user info:', error);
-    } else {
-      user.value = data;
-      console.log('Current User => ', authenticatedUser.value, user.value);
-    }
+    loadUserFromLocalStorage();
   }
 });
+
+function handleSearchText() {
+  if (searchText.value.trim()) {
+    resetSearchQuery();
+    searchQuery.value.isWishlist = false;
+    searchQuery.value.isFavorite = false;
+    searchQuery.value.searchText = searchText.value.trim();
+  }
+}
 
 function handleSearchQuery(type: 'isWishlist' | 'isFavorite') {
   resetSearchQuery();
@@ -214,5 +221,9 @@ async function getUserDistance() {
   searchQuery.value.distance = mapDistance[distance.value] ?? 0;
   searchQuery.value.isWishlist = false;
   searchQuery.value.isFavorite = false;
+  if (route.name !== 'index') {
+    await navigateTo({ name: 'index', query: { ...route.query, distance: searchQuery.value.distance } });
+
+  }
 }
 </script>
