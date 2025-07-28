@@ -182,7 +182,7 @@ onMounted(async () => {
       console.error('Error fetching user info:', error);
     } else {
       user.value = data;
-      console.log('Current User => ', user.value);
+      console.log('Current User => ', authenticatedUser.value, user.value);
     }
   }
 });
