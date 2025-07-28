@@ -136,6 +136,7 @@
     <v-sheet
       class="mx-auto"
     >
+      <!-- Button to toggle visibility of the drawer -->
       <div
         v-if="wantedPlaces.length"
         class="d-flex justify-center align-center" style="position: absolute; top: -28px; right: 0;"
@@ -146,8 +147,9 @@
           size="small"
           @click="sliders.width = sliders.width === 200 ? 10 : 200"
           tile
+          class="rounded-t-lg"
         >
-          <v-icon :icon="sliders.width === 200 ? 'mdi-chevron-down' : 'mdi-chevron-up'" />
+          <v-icon :icon="sliders.width === 200 ? 'mdi-chevron-down' : 'mdi-chevron-up'" size="x-large" />
         </v-btn>
       </div>
       <v-slide-group
