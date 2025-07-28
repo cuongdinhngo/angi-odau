@@ -240,6 +240,8 @@ async function handleFavourite(place: FoodPlaceWithDistance) {
       authenticatedUser.value.id
     );
     place.isFavorite = false;
+    wantedPlaces.value = wantedPlaces.value.filter(p => p.id !== place.id);
+    mapCenter.value = [currentLocation.lat, currentLocation.lng];
   } else {
     // Add to favourites
     await addToFavourite({
@@ -263,6 +265,8 @@ async function handleWishlist(place: FoodPlaceWithDistance) {
       authenticatedUser.value.id
     );
     place.isWishlist = false;
+    wantedPlaces.value = wantedPlaces.value.filter(p => p.id !== place.id);
+    mapCenter.value = [currentLocation.lat, currentLocation.lng];
   } else {
     // Add to wishlist
     await addToWishlist({
