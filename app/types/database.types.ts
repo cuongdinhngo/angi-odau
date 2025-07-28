@@ -14,6 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
+      favourites: {
+        Row: {
+          created_at: string
+          id: number
+          place_id: number
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: number
+          place_id: number
+          user_id?: string
+        }
+        Update: {
+          created_at?: string
+          id?: number
+          place_id?: number
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "favourite_place_id_fkey"
+            columns: ["place_id"]
+            isOneToOne: false
+            referencedRelation: "food_places"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "favourite_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       food_places: {
         Row: {
           address: string
@@ -180,6 +216,23 @@ export type Database = {
       gc_to_sec: {
         Args: { "": number }
         Returns: number
+      }
+      get_favourite_places: {
+        Args: { user_uuid: string }
+        Returns: {
+          address: string
+          alias: string | null
+          close_time: string | null
+          created_at: string
+          description: string | null
+          id: number
+          lat: number | null
+          lng: number | null
+          name: string
+          open_time: string | null
+          photo: string | null
+          tags: string[] | null
+        }[]
       }
       get_wishlist_places: {
         Args: { user_uuid: string }

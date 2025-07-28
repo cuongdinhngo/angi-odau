@@ -77,7 +77,7 @@
         <v-icon icon="mdi-account-circle-outline"/>
         <v-menu
           activator="parent"
-          :close-on-content-click="false"
+          :close-on-content-click="true"
         >
           <v-card
             v-if="!authenticatedUser"

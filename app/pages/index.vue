@@ -50,7 +50,7 @@
                   <v-btn icon @click="handleWishlist(place)">
                     <v-icon color="red" :icon="place.isWishlist ? 'mdi-star' : 'mdi-star-outline'" />
                   </v-btn>
-                  <v-btn icon>
+                  <v-btn icon @click="handleFavourite(place)">
                     <v-icon color="red" :icon="place.isFavorite ? 'mdi-heart' : 'mdi-heart-outline'" />
                   </v-btn>
                 </v-card-actions>
@@ -193,6 +193,7 @@ type FoodPlaceWithDistance = Tables<'food_places'> & { distance?: number, isWish
 
 const { currentLocation, getCurrentLocation, getDistance } = useLocations();
 const { loadWishlist, insert:addToWishlist, removeFromWishlist } = useWishlist();
+const { loadFavouritePlaces, insert:addToFavourite, removeFromFavourites } = useFavourites();
 
 const supabase = useSupabaseClient();
 const searchQuery = useSearchQuery();
@@ -225,6 +226,29 @@ const { status } = useAsyncData(async () => {
   // Set map center to user's current location
   mapCenter.value = [currentLocation.lat, currentLocation.lng];
 });
+
+async function handleFavourite(place: FoodPlaceWithDistance) {
+  if (!authenticatedUser.value) {
+    navigateTo({ name: 'login' });
+    return;
+  }
+
+  if (place.isFavorite) {
+    // Remove from favourites
+    await removeFromFavourites(
+      place.id,
+      authenticatedUser.value.id
+    );
+    place.isFavorite = false;
+  } else {
+    // Add to favourites
+    await addToFavourite({
+      user_id: authenticatedUser.value.id,
+      place_id: place.id,
+    });
+    place.isFavorite = true;
+  }
+}
 
 async function handleWishlist(place: FoodPlaceWithDistance) {
   if (!authenticatedUser.value) {
@@ -352,6 +376,23 @@ watch(
         }));
       }
 
+    }
+
+    // If favourites are requested, load favourite places
+    if (newSearchQueries.value.isFavorite && authenticatedUser.value?.id) {
+      const { data: favourites, error } = await loadFavouritePlaces(authenticatedUser.value.id);
+      if (error) {
+        console.error('Error loading favourites:', error);
+      } else {
+        wantedPlaces.value = favourites.map(place => ({
+          ...place,
+          distance: getDistance(
+            currentLocation,
+            { lat: place.lat, lng: place.lng } as Location
+          ),
+          isFavorite: true,
+        }));
+      }
     }
 
     // Update sliders visibility based on wanted places
