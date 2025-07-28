@@ -74,6 +74,58 @@
     </v-row>
   </v-container>
 
+  <!-- Dialog for secret surprise -->
+  <v-dialog
+    v-model="secretDialog"
+    width="400"
+    max-width="90%"
+  >
+    <v-avatar
+      size="70"
+      class="elevation-2 bg-white"
+      style="position: absolute; top: -40px; z-index: 1; left: 50%; transform: translateX(-50%);"
+    >
+      <v-responsive>
+        <v-img
+          :src="iconPath('gift.svg')"
+          width="50"
+          height="50"
+          cover
+          class="mx-auto"
+        ></v-img>
+      </v-responsive>
+    </v-avatar>
+    <v-card>
+      <v-card-title class="my-2"></v-card-title>
+      <v-card-text class="text-center">
+        <p class="text-subtitle-2">Chọn một địa điểm ngẫu nhiên để khám phá!</p>
+        <p class="font-weight-bold mt-2">Xé túi mù nào!</p>
+      </v-card-text>
+      <v-card-text
+        v-if="surprising"
+        class="text-center"
+      >
+        <v-progress-circular
+          indeterminate
+          color="orange"
+          size="100"
+          width="20"
+        ></v-progress-circular>
+      </v-card-text>
+      <v-card-title
+        v-if="!surprising"
+        class="text-center"
+      >
+        <v-btn
+          variant="tonal"
+          size="large"
+          icon="mdi-hand-wave-outline"
+          @click="surpriseMe"
+        />
+      </v-card-title>
+    </v-card>
+  </v-dialog>
+
   <!-- Bottom navigation drawer for wanted places -->
   <v-navigation-drawer
     v-model="sliders.visible"
@@ -152,6 +204,9 @@ const sliders = reactive({
   width: 200,
 });
 const markerRefs = ref({});
+const secretDialog = inject('secretDialog', ref(false));
+const surprisedPlace = ref<FoodPlaceWithDistance | null>(null);
+const surprising = ref(false);
 
 
 // Custom icon for user location
@@ -171,7 +226,6 @@ const { status } = useAsyncData(async () => {
 
 async function handleWishlist(place: FoodPlaceWithDistance) {
   if (!authenticatedUser.value) {
-    // Redirect to login if user is not authenticated
     navigateTo({ name: 'login' });
     return;
   }
@@ -193,6 +247,24 @@ async function handleWishlist(place: FoodPlaceWithDistance) {
   }
 }
 
+function surpriseMe() {
+  const randomIndex = Math.floor(Math.random() * wantedPlaces.value.length);
+  const randomPlace = wantedPlaces.value[randomIndex];
+  if (randomPlace) {
+    surprising.value = true;
+    setTimeout(() => {
+      surprising.value = false;
+      secretDialog.value = false;
+      surprisedPlace.value = randomPlace;
+      mapCenter.value = [randomPlace.lat, randomPlace.lng];
+      const marker = markerRefs.value[randomPlace.id];
+      if (marker?.leafletObject) {
+        marker.leafletObject.openPopup();
+      }
+    }, 3000);
+  }
+} 
+
 // Capture reference when rendering
 function setMarkerRef(id: number, el) {
   if (el) {
@@ -201,7 +273,6 @@ function setMarkerRef(id: number, el) {
 }
 
 function showPlaceDetails(toggle: any, place: FoodPlaceWithDistance) {
-  console.log('SHOWING marketRefs => ', markerRefs.value);
   toggle();
   mapCenter.value = [place.lat, place.lng] as [number, number];
   const marker = markerRefs.value[place.id]

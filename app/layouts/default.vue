@@ -64,6 +64,15 @@
 
       <v-spacer></v-spacer>
 
+      <!-- Secret -->
+      <v-btn
+        icon
+        @click="secretDialog = true"
+      >
+        <v-icon icon="mdi-gift-outline"/>
+      </v-btn>
+
+      <!-- User profile menu -->
       <v-btn icon>
         <v-icon icon="mdi-account-circle-outline"/>
         <v-menu
@@ -155,6 +164,9 @@ const { user, get:getUserInfo } = useUsers();
 const navMenu = ref(true);
 const distance = ref(0);
 const authenticatedUser = useSupabaseUser();
+
+const secretDialog = ref(false);
+provide('secretDialog', secretDialog);
 
 const distanceLabels = {
   0: '500m',
