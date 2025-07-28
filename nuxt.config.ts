@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     redirectOptions: {
       login: '/login',
       callback: '/login',
-      exclude: ['/', '/login', '/register', '/forgot-password'],
+      exclude: ['/', '/login', '/register'],
     }
   },
   vuetify: {
