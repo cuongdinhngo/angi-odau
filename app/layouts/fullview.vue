@@ -6,7 +6,9 @@
           <v-col
             cols="12"
           >
-            <slot />
+            <div class="d-flex justify-center align-center" style="min-height: 100vh;">
+              <slot />
+            </div>
           </v-col>
         </v-row>
       </v-container>
