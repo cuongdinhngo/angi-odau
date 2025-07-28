@@ -44,7 +44,7 @@
                 <v-card-text class="pa-0 text-subtitle-2">
                   <p v-if="place.address" class="py-1 ma-0">{{ place.address }}</p>
                   <p v-if="place.description" class="py-1 ma-0">{{ place.description }}</p>
-                  <p v-if="place.distance" class="py-1 ma-0">Distance: <span class="font-weight-bold">{{ place.distance ? place.distance.toFixed(2) : 'N/A' }} m</span></p>
+                  <p v-if="place.distance" class="py-1 ma-0">Distance: <span class="font-weight-bold">{{ place.distance ? place.distance.toFixed(0) : 'N/A' }} m</span></p>
                 </v-card-text>
                 <v-card-actions class="pa-0 d-flex justify-center ga-4">
                   <v-btn icon @click="handleWishlist(place)">
@@ -349,14 +349,6 @@ watch(
         wantedPlaces.value = [];
       } else {
         wantedPlaces.value = data ?? [];
-        // Calculate distance for each place
-        wantedPlaces.value.forEach(place => {
-          place.distance = getDistance(
-            currentLocation,
-            { lat: place.lat, lng: place.lng } as Location
-          );
-        });
-        console.log('Fetched places:', wantedPlaces.value);
       }
     }
 
@@ -368,10 +360,6 @@ watch(
       } else {
         wantedPlaces.value = wishlist.map(place => ({
           ...place,
-          distance: getDistance(
-            currentLocation,
-            { lat: place.lat, lng: place.lng } as Location
-          ),
           isWishlist: true,
         }));
       }
@@ -386,13 +374,19 @@ watch(
       } else {
         wantedPlaces.value = favourites.map(place => ({
           ...place,
-          distance: getDistance(
-            currentLocation,
-            { lat: place.lat, lng: place.lng } as Location
-          ),
           isFavorite: true,
         }));
       }
+    }
+
+    // Calculate distance for each place
+    if (wantedPlaces.value.length > 0) {
+      wantedPlaces.value.forEach(place => {
+        place.distance = getDistance(
+          currentLocation,
+          { lat: place.lat, lng: place.lng } as Location
+        );
+      });
     }
 
     // Update sliders visibility based on wanted places
