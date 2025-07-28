@@ -86,6 +86,7 @@ definePageMeta({
 
 import { useField, useForm } from 'vee-validate';
 
+const { storeUserIntoLocalStorage, get:getUserInfo } = useUsers();
 const { mdAndDown } = useDisplay();
 const loading = ref(false);
 
@@ -131,6 +132,17 @@ const submit = handleSubmit(async values => {
       loading.value = false;
     }, snackbar.timeout);
   } else {
+    const { data:userInfo, error:userError } = await getUserInfo(data.user.id);
+    if (userError) {
+      console.error('Error fetching user info:', userError);
+      snackbar.visible = true;
+      snackbar.color = 'red';
+      snackbar.message = 'Failed to fetch user information.';
+      loading.value = false;
+      return;
+    }
+    storeUserIntoLocalStorage(userInfo);
+    console.log('Current User => ', userInfo);
     snackbar.visible = true;
     snackbar.message = 'Welcome back!';
     setTimeout(() => {
