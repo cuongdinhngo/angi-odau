@@ -33,7 +33,7 @@
             <LPopup ref="popupRefs">
               <v-card class="pa-0 rounded-lg text-center elevation-0 bg-transparent">
                 <v-img
-                  :src="getPlacePhotoUrl(place.photo)"
+                  :src="place.photo?.includes('supabase') ? place.photo : getPlacePhotoUrl(place.photo)"
                   rounded="lg"
                   width="100px"
                   height="100px"
@@ -171,7 +171,7 @@
           >
             <v-responsive :aspect-ratio="1/1">
               <v-img
-                :src="getPlacePhotoUrl(place.photo)"
+                :src="place.photo?.includes('supabase') ? place.photo : getPlacePhotoUrl(place.photo)"
                 width="120"
                 cover
                 class="rounded-t-lg"
@@ -210,6 +210,14 @@ const markerRefs = ref({});
 const secretDialog = inject('secretDialog', ref(false));
 const surprisedPlace = ref<FoodPlaceWithDistance | null>(null);
 const surprising = ref(false);
+
+searchQuery.value = {
+  tags: route.query?.tags ? (Array.isArray(route.query.tags) ? route.query.tags : [route.query.tags]) : [],
+  isWishlist: false,
+  isFavorite: false,
+  searchText: route.query?.searchText || '',
+  distance: route.query?.distance ? Number(route.query.distance) : 0,
+};
 
 
 // Custom icon for user location
@@ -336,12 +344,23 @@ watch(
       filters.tags_filter = newSearchQueries.value.tags;
       newQuery.tags = newSearchQueries.value.tags.join(',');
     }
+    if (newSearchQueries.value.searchText) {
+      filters.text_query = newSearchQueries.value.searchText;
+      newQuery.text_query = newSearchQueries.value.searchText;
+    }
 
     // Only update if query actually changed
     const currentQuery = { ...route.query };
     const queriesAreDifferent = JSON.stringify(currentQuery) !== JSON.stringify(newQuery);
     if (queriesAreDifferent) {
       router.replace({ query: newQuery });
+    }
+
+    // Reload current location if userlat/lng are 0
+    if (filters.user_lat === 0 && filters.user_lng === 0) {
+      await getCurrentLocation();
+      filters.user_lat = currentLocation.lat;
+      filters.user_lng = currentLocation.lng;
     }
 
     // Fetch places based on filters distance OR tags OR text query
