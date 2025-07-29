@@ -4,7 +4,7 @@
     width="100"
     v-model="navMenu"
   >
-    <v-list-item link class="px-2 text-center">
+    <v-list-item link class="px-2 text-center" @click="navigateTo({ name: 'index' });">
       <template #title>
         <v-img
           :src="iconPath('kiosk_trolley.svg')"

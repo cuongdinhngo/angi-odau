@@ -27,6 +27,7 @@
             :key="idx"
             :lat-lng="[place?.lat, place?.lng]"
             :ref="el => setMarkerRef(place.id, el)"
+            @click="selectedPlace = place.id;"
           >
             <LTooltip>{{ place.name }}</LTooltip>
 
@@ -153,6 +154,7 @@
         </v-btn>
       </div>
       <v-slide-group
+        v-model="selectedPlace"
         center-active
         show-arrows
         class="align-center"
@@ -161,9 +163,10 @@
           v-for="(place, idx) in wantedPlaces"
           :key="idx"
           v-slot="{ isSelected, toggle }"
+          :value="place.id"
         >
           <v-card
-            :color="isSelected ? 'primary' : 'grey-lighten-4'"
+            :color="isSelected || selectedPlace?.id === place.id ? 'primary' : 'grey-lighten-4'"
             class="ma-2 text-center rounded-lg"
             height="180"
             width="120"
@@ -210,6 +213,8 @@ const markerRefs = ref({});
 const secretDialog = inject('secretDialog', ref(false));
 const surprisedPlace = ref<FoodPlaceWithDistance | null>(null);
 const surprising = ref(false);
+const selectedPlace = ref<number | null>(null);
+const scrollToPlace = ref<number|null>(null);
 
 searchQuery.value = {
   tags: route.query?.tags ? (Array.isArray(route.query.tags) ? route.query.tags : [route.query.tags]) : [],
@@ -418,7 +423,7 @@ watch(
     // Map center to your current location
     mapCenter.value = [currentLocation.lat, currentLocation.lng];
 
-    console.log('Updated wanted places:', wantedPlaces.value.length);
+    console.log('Updated wanted places:', wantedPlaces.value.length, wantedPlaces.value);
   },
   { immediate: true, deep: true }
 );
