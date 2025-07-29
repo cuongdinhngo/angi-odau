@@ -25,7 +25,7 @@
         <v-text-field
           v-model="description.value.value"
           :error-messages="description.errorMessage.value"
-          label="description"
+          label="Description"
           variant="outlined"
         ></v-text-field>
 
