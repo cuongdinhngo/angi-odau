@@ -6,6 +6,7 @@ export const useOpenStreetMap = () => {
 
   const getLatLongFromAddress = async (address: string): Promise<Location | null> => {
     const fullApiRequest = `${OPENSTREETMAP_API}?q=${encodeURIComponent(address)}&format=json`;
+    console.log('[OpenStreetMap] Fetching location for address:', fullApiRequest);
     try {
       const response = await fetch(fullApiRequest);
       const data = await response.json();
