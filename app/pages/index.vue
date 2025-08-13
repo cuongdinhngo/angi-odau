@@ -194,7 +194,7 @@ import type { Location } from '@/types/Map';
 
 type FoodPlaceWithDistance = Tables<'food_places'> & { distance?: number, isWishlist?: boolean, isFavorite?: boolean };
 
-const { currentLocation, getCurrentLocation, getDistance } = useLocations();
+const { currentLocation, getCurrentLocation, getDistance, getLatLongFromAddress } = useLocations();
 const { loadWishlist, insert:addToWishlist, removeFromWishlist } = useWishlist();
 const { loadFavouritePlaces, insert:addToFavourite, removeFromFavourites } = useFavourites();
 
@@ -234,7 +234,20 @@ const userIcon = L.icon({
 });
 
 const { status } = useAsyncData(async () => {
+  console.log('Fetching current location...');
   // Get current location
+  if (route.query.currentAddress) {
+    const coordinates = await getLatLongFromAddress(route.query.currentAddress as string);
+    if (coordinates) {
+      currentLocation.lat = coordinates.lat;
+      currentLocation.lng = coordinates.lng;
+      console.log('Current location from address:', currentLocation);
+    } else {
+      console.error('Could not get coordinates for address:', route.query.currentAddress);
+    }
+  } else {
+    await getCurrentLocation();
+  }
   await getCurrentLocation();
   // Set map center to user's current location
   mapCenter.value = [currentLocation.lat, currentLocation.lng];
@@ -352,6 +365,18 @@ watch(
     if (newSearchQueries.value.searchText) {
       filters.text_query = newSearchQueries.value.searchText;
       newQuery.text_query = newSearchQueries.value.searchText;
+    }
+    if (newSearchQueries.value.currentAddress) {
+      newQuery.currentAddress = newSearchQueries.value.currentAddress;
+      const coordinates = await getLatLongFromAddress(newSearchQueries.value.currentAddress);
+      if (coordinates) {
+        filters.user_lat = coordinates.lat;
+        filters.user_lng = coordinates.lng;
+        currentLocation.lat = coordinates.lat;
+        currentLocation.lng = coordinates.lng;
+      } else {
+        console.error('Could not get coordinates for address:', newSearchQueries.value.currentAddress);
+      }
     }
 
     // Only update if query actually changed

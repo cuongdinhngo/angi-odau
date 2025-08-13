@@ -26,6 +26,7 @@
         density="compact"
         rounded="pill"
         flat
+        clearable
         @keyup.enter="handleSearchText"
         @click:append-inner="handleSearchText"
       />
@@ -52,6 +53,13 @@
               step="1"
               tick-size="4"
             ></v-slider>
+            <v-text-field
+              v-model="currentAddress"
+              label="Vị trí hiện tại"
+              hide-details
+              single-line
+              clearable
+            ></v-text-field>
           </v-card-text>
 
           <v-card-actions>
@@ -135,12 +143,11 @@
                 </template>
               </v-list-item>
               <v-list-item
-                prepend-icon="mdi-map-marker-plus"
                 title="Add new place"
                 @click="navigateTo({ name: 'new-place' })"
               >
                 <template #prepend>
-                  <v-icon color="blue" icon="mdi-map-marker-plus" />
+                  <v-icon color="blue" icon="mdi-home-map-marker" />
                 </template>
               </v-list-item>
               <v-list-item
@@ -175,6 +182,7 @@ const filterMenu = ref(false);
 const searchText = ref('');
 const route = useRoute();
 const secretDialog = ref(false);
+const currentAddress = ref<string | null>(null);
 provide('secretDialog', secretDialog);
 
 const distanceLabels = {
@@ -221,9 +229,17 @@ async function getUserDistance() {
   searchQuery.value.distance = mapDistance[distance.value] ?? 0;
   searchQuery.value.isWishlist = false;
   searchQuery.value.isFavorite = false;
-  if (route.name !== 'index') {
-    await navigateTo({ name: 'index', query: { ...route.query, distance: searchQuery.value.distance } });
+  if (currentAddress.value) {
+    searchQuery.value.currentAddress = currentAddress.value.trim();
+  }
 
+  console.log('Search Query:', searchQuery.value);
+  if (route.name !== 'index') {
+    await navigateTo({ name: 'index', query: {
+      ...route.query,
+      distance: searchQuery.value.distance,
+      currentAddress: searchQuery.value.currentAddress
+    }});
   }
 }
 </script>
