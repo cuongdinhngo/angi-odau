@@ -1,15 +1,4 @@
-export interface Location {
-  lat: number;
-  lng: number;
-}
-
-export interface Address {
-  street: string;
-  city?: string;
-  state?: string;
-  country?: string;
-  postalCode?: string;
-}
+import type { Location, Address } from "~/types/Map";
 
 const VIET_NAM = ['vietnam', 'việt nam'];
 const OPEN_STREET_MAP = 'OpenStreetMap';
@@ -18,21 +7,19 @@ const GOOGLE_MAP = 'GoogleMap';
 export const useLocations = (mode: string = OPEN_STREET_MAP) => {
 
   const currentMode = mode;
-  const openStreetMap = useOpenStreetMap();
   const currentLocation = reactive<Location>({ lat: 0, lng: 0 });
-  const config = useRuntimeConfig();
   const danangLocation = { lat: 16.0544, lng: 108.2022 };
 
     // Get address by IP using ipinfo.io
   const getLatLngByIP = async (): Promise<Location | null> => {
     try {
-      const response = await fetch(`https://ipinfo.io/json?token=${config.public.ipInfoToken}`);
-      const data = await response.json();
-      if (data && data.loc) {
-        const [lat, lng] = data.loc.split(',').map(Number);
-        return { lat, lng };
+      if (currentMode === OPEN_STREET_MAP) {
+        return userFreeAPIs().getLatLngByIP();
+      } else if (currentMode === GOOGLE_MAP) {
+        return useGoogleAPIs().getLatLngByIP();
+      } else {
+        return null;
       }
-      return null;
     } catch (error) {
       console.error('[getLatLngByIP]', error);
       return null;
@@ -59,7 +46,7 @@ export const useLocations = (mode: string = OPEN_STREET_MAP) => {
         currentLocation.lat = currentLatLng.lat;
         currentLocation.lng = currentLatLng.lng;
       } else {
-        console.warn('Could not get current location, using default (Da Nang)');
+        console.error('Could not get current location, using default (Da Nang)');
         currentLocation.lat = danangLocation.lat;
         currentLocation.lng = danangLocation.lng;
       }
@@ -107,9 +94,12 @@ export const useLocations = (mode: string = OPEN_STREET_MAP) => {
 
   const getLatLongFromAddress = async (address: string): Promise<Location | null> => {
     try {
+      console.log('[getLatLongFromAddress] Address:', address, mode);
       switch (currentMode) {
         case OPEN_STREET_MAP:
-          return await openStreetMap.getLatLongFromAddress(fullfillAddress(address));
+          return await useOpenStreetMap().getLatLongFromAddress(fullfillAddress(address));
+        case GOOGLE_MAP:
+          return await useGoogleAPIs().getLatLongFromAddress(fullfillAddress(address));
         default:
           throw new Error(`Unsupported mode: ${currentMode}`);
       }
