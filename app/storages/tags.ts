@@ -12,63 +12,20 @@ export const TAGS: Tag[] = [
     value: 'an-toi',
   },
   {
-    label: 'Ăn Khuya',
-    value: 'an-khuya',
-  },
-  {
-    label: 'Đồ Uống',
-    value: 'do-uong',
-  },
-  {
     label: 'Ăn Vặt',
     value: 'an-vat',
   },
   {
-    label: 'Đồ Ngọt',
-    value: 'do-ngot',
+    label: 'Ăn Chay',
+    value: 'an-chay',
   },
   {
-    label: 'Đồ Chay',
-    value: 'do-chay',
+    label: 'Ăn Nhậu',
+    value: 'an-nhau',
   },
   {
-    label: 'Đồ Nướng',
-    value: 'do-nuong',
+    label: 'Đi Cafe',
+    value: 'di-cafe',
   },
-  {
-    label: 'Hàn Quốc',
-    value: 'han-quoc',
-  },
-  {
-    label: 'Nhật Bản',
-    value: 'nhat-ban',
-  },
-  {
-    label: 'Trung Quốc',
-    value: 'trung-quoc',
-  },
-  {
-    label: 'Bún',
-    value: 'bun',
-  },
-  {
-    label: 'Phở',
-    value: 'pho',
-  },
-  {
-    label: 'Cơm',
-    value: 'com',
-  },
-  {
-    label: 'Mì',
-    value: 'mi',
-  },
-  {
-    label: 'Bánh Mì',
-    value: 'banh-mi',
-  },
-  {
-    label: 'Pizza',
-    value: 'pizza',
-  },
+
 ];

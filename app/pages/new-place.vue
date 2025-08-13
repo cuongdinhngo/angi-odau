@@ -24,10 +24,22 @@
 
         <v-text-field
           v-model="description.value.value"
-          :error-messages="description.errorMessage.value"
           label="Description"
           variant="outlined"
         ></v-text-field>
+
+        <v-autocomplete
+          :items="tags"
+          item-title="label"
+          item-value="value"
+          label="Tags"
+          variant="outlined"
+          multiple
+          chips
+          clearable
+          v-model="selectedTags.value.value"
+          :error-messages="selectedTags.errorMessage.value"
+        ></v-autocomplete>
 
         <v-file-input
           v-model="selectedPhoto"
@@ -75,26 +87,32 @@ const { mdAndDown } = useDisplay();
 const { uploadPhoto } = usePhotos();
 const { insert:addNewPlace } = useFoodPlaces();
 const { getLatLongFromAddress } = useLocations();
+const { tags } = useTags();
 
 const { handleSubmit, handleReset } = useForm({
   validationSchema: {
     name (value) {
-      if (typeof value === 'string' && value.length >= 0) return true
+      if (typeof value === 'string' && value.length > 0) return true
 
       return 'Name is required.'
     },
     address (value) {
-      if (typeof value === 'string' && value.length >= 0) return true
+      if (typeof value === 'string' && value.length > 0) return true
 
-      return 'Name is required.'
+      return 'Address is required.'
+    },
+    selectedTags (value) {
+      if (Array.isArray(value) && value.length > 0) return true
+
+      return 'At least one tag is required.'
     },
   },
 });
 
-const name = useField('name', undefined, { initialValue: 'goc.coffee' });
-const address = useField('address', undefined, { initialValue: '192 Hoàng Diệu, Phước Ninh, Hải Châu, Đà Nẵng 550000, Vietnam' });
-const description = useField('description', undefined, { initialValue: 'Chào bạn ghé thăm GÓC quán nhỏ của tụi mình' });
-const tags = useField('tags');
+const name = useField('name');
+const address = useField('address');
+const description = useField('description');
+const selectedTags = useField('selectedTags');
 const selectedPhoto = ref<File | null>(null);
 const imagePreview = ref<string | null>(null);
 const loading = ref(false);
@@ -120,14 +138,24 @@ const submit = handleSubmit(async values => {
     photoUrl = await uploadPhoto(selectedPhoto.value);
   }
 
+  console.log('Form values:', values);
+
+
   const { lat, lng } = await getLatLongFromAddress(address.value.value);
 
+  console.log('Latitude:', lat, 'Longitude:', lng);
+
   const data = {
-    ...values,
+    name: values.name,
+    address: values.address,
+    description: values.description,
     photo: photoUrl,
     lat,
     lng,
+    tags: values.selectedTags,
   };
+
+  console.log('Submitting data:', data);
 
   const { error } = await addNewPlace(data);
   loading.value = false;
