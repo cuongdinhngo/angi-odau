@@ -12,10 +12,10 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
+    ipInfoToken: process.env.VITE_IP_INFO_TOKEN,
     public: {
-      googleMapsApiKey: process.env.VITE_GOOGLE_MAPS_API_KEY,
-      googleMapsId: process.env.VITE_GOOGLE_MAPS_ID,
-      ipInfoToken: process.env.VITE_IP_INFO_TOKEN,
+      googleMapApiKey: process.env.VITE_GOOGLE_MAPS_API_KEY,
+      googleMapId: process.env.VITE_GOOGLE_MAPS_ID,
     },
   },
   supabase: {
