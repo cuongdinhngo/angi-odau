@@ -4,6 +4,7 @@ export interface SearchQuery {
   distance: number;
   isWishlist?: boolean;
   isFavorite?: boolean;
+  currentAddress?: string | null;
 }
 
 export const useSearchQuery = () => useState<SearchQuery>(
@@ -14,6 +15,7 @@ export const useSearchQuery = () => useState<SearchQuery>(
     distance: 0,
     isWishlist: false,
     isFavorite: false,
+    currentAddress: null,
   })
 );
 
@@ -24,4 +26,5 @@ export const resetSearchQuery = () => {
   searchQuery.value.distance = 0;
   searchQuery.value.isWishlist = false;
   searchQuery.value.isFavorite = false;
+  searchQuery.value.currentAddress = null;
 }
