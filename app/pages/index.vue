@@ -186,6 +186,26 @@
       </v-slide-group>
     </v-sheet>
   </v-navigation-drawer>
+
+    <!-- Dialog for secret surprise -->
+  <v-dialog
+    v-model="loadingDialog"
+    width="400"
+    max-width="90%"
+  >
+    <v-card>
+      <v-card-text
+        class="text-center"
+      >
+        <v-progress-circular
+          indeterminate
+          color="blue"
+          size="100"
+          width="20"
+        ></v-progress-circular>
+      </v-card-text>
+    </v-card>
+  </v-dialog>
 </template>
 <script setup lang="ts">
 import L from 'leaflet';
@@ -215,6 +235,7 @@ const surprisedPlace = ref<FoodPlaceWithDistance | null>(null);
 const surprising = ref(false);
 const selectedPlace = ref<number | null>(null);
 const scrollToPlace = ref<number|null>(null);
+const loadingDialog = ref(false);
 
 searchQuery.value = {
   tags: route.query?.tags ? (Array.isArray(route.query.tags) ? route.query.tags : [route.query.tags]) : [],
@@ -346,6 +367,7 @@ watch(
       text_query?: string,
     } = {};
 
+    loadingDialog.value = true;
 
     // Build new query object based on search values
     const newQuery: Record<string, string> = {};
@@ -443,6 +465,8 @@ watch(
 
     // Map center to your current location
     mapCenter.value = [currentLocation.lat, currentLocation.lng];
+
+    loadingDialog.value = false;
 
   },
   { immediate: true, deep: true }
