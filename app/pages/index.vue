@@ -234,14 +234,12 @@ const userIcon = L.icon({
 });
 
 const { status } = useAsyncData(async () => {
-  console.log('Fetching current location...');
   // Get current location
   if (route.query.currentAddress) {
     const coordinates = await getLatLongFromAddress(route.query.currentAddress as string);
     if (coordinates) {
       currentLocation.lat = coordinates.lat;
       currentLocation.lng = coordinates.lng;
-      console.log('Current location from address:', currentLocation);
     } else {
       console.error('Could not get coordinates for address:', route.query.currentAddress);
     }
@@ -340,7 +338,6 @@ function showPlaceDetails(toggle: any, place: FoodPlaceWithDistance) {
 watch(
   () => searchQuery,
   async (newSearchQueries) => {
-    console.log('Search query changed:', newSearchQueries.value);
     let filters: {
       user_lat?: number,
       user_lng?: number,
@@ -395,7 +392,6 @@ watch(
 
     // Fetch places based on filters distance OR tags OR text query
     if (filters.radius || filters.tags_filter || filters.text_query) {
-      console.log('Fetching places with filters:', JSON.stringify(filters));
       const { data, error } = await supabase.rpc('search_food_places', filters);
       if (error) {
         console.error('Error fetching places:', error);
@@ -448,7 +444,6 @@ watch(
     // Map center to your current location
     mapCenter.value = [currentLocation.lat, currentLocation.lng];
 
-    console.log('Updated wanted places:', wantedPlaces.value.length, wantedPlaces.value);
   },
   { immediate: true, deep: true }
 );

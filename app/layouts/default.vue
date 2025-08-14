@@ -233,7 +233,6 @@ async function getUserDistance() {
     searchQuery.value.currentAddress = currentAddress.value.trim();
   }
 
-  console.log('Search Query:', searchQuery.value);
   if (route.name !== 'index') {
     await navigateTo({ name: 'index', query: {
       ...route.query,

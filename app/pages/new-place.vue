@@ -138,13 +138,7 @@ const submit = handleSubmit(async values => {
     photoUrl = await uploadPhoto(selectedPhoto.value);
   }
 
-  console.log('Form values:', values);
-
-
   const { lat, lng } = await getLatLongFromAddress(address.value.value);
-
-  console.log('Latitude:', lat, 'Longitude:', lng);
-
   const data = {
     name: values.name,
     address: values.address,
@@ -155,8 +149,6 @@ const submit = handleSubmit(async values => {
     tags: values.selectedTags,
   };
 
-  console.log('Submitting data:', data);
-
   const { error } = await addNewPlace(data);
   loading.value = false;
   if (error) {
@@ -165,12 +157,10 @@ const submit = handleSubmit(async values => {
     snackbar.color = 'red';
     snackbar.message = 'Failed to add new place. Please try again.';
   } else {
-    console.log('New place added successfully:', data);
     handleReset();
     snackbar.visible = true;
     snackbar.message = 'New place added successfully!';
     snackbar.color = 'green';
   }
-  console.log('Form submitted with values:', data);
 })
 </script>

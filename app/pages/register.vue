@@ -143,7 +143,6 @@ const submit = handleSubmit(async values => {
     message.value = 'Failed to sign up. Please try again.';
     return;
   } else {
-    console.log('Signup success:', data);
     message.value = 'Signup successful!';
     snackbar.value = true;
     const { error:userError } = await insert({

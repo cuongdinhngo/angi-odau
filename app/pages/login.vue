@@ -116,7 +116,6 @@ const snackbar = reactive({
 });
 
 const submit = handleSubmit(async values => {
-  console.log('Form submitted:', values);
   loading.value = true;
   const { data, error } = await useSupabaseClient().auth.signInWithPassword({
     email: values.email,
@@ -142,7 +141,6 @@ const submit = handleSubmit(async values => {
       return;
     }
     storeUserIntoLocalStorage(userInfo);
-    console.log('Current User => ', userInfo);
     snackbar.visible = true;
     snackbar.message = 'Welcome back!';
     setTimeout(() => {
