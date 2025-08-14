@@ -7,7 +7,7 @@
     <v-list-item link class="px-2 text-center" @click="navigateTo({ name: 'index' });">
       <template #title>
         <v-img
-          :src="iconPath('kiosk_trolley.svg')"
+          :src="getIconPath('kiosk_trolley.svg')"
           width="40"
           height="40"
           cover
@@ -34,7 +34,7 @@
       >
         <template #title>
           <v-img
-            :src="iconPath(item.icon)"
+            :src="getIconPath(item.icon)"
             width="40"
             height="40"
             cover

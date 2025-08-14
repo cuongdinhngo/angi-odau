@@ -88,7 +88,7 @@
     >
       <v-responsive>
         <v-img
-          :src="iconPath('gift.svg')"
+          :src="getIconPath('gift.svg')"
           width="50"
           height="50"
           cover
@@ -227,7 +227,7 @@ searchQuery.value = {
 
 // Custom icon for user location
 const userIcon = L.icon({
-  iconUrl: iconPath('location.png'),
+  iconUrl: getIconPath('location.png'),
   iconSize: [40, 40],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
