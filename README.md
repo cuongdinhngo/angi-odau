@@ -1,4 +1,4 @@
-# Angi - Food Places Finder 🍜
+# An gi - O Dau :: Food Places Finder 🍜
 
 **Personal Pet Project - Non-Commercial Use Only**
 
