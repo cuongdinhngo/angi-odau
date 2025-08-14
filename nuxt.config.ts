@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   ssr: false,
   modules: ['@nuxtjs/leaflet', 'vuetify-nuxt-module', '@nuxtjs/supabase'],
   app: {
+    baseURL: process.env.NODE_ENV === 'production' ? '/angi-odau/' : '/',
     head: {
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/icons/kiosk_trolley.svg' }
